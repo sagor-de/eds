@@ -1,37 +1,613 @@
-.hero-container .hero-wrapper {
-  max-width: unset;
-  padding: 0;
-}
-
-.hero {
-  position: relative;
-  padding: 40px 24px;
-  min-height: 300px;
-}
-
-.hero h1 {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--background-color);
-}
-
-.hero picture {
-  position: absolute;
+.primary-hero-video {
+  height: 100% !important;
+  width: 100% !important;
   z-index: -1;
   inset: 0;
   object-fit: cover;
   box-sizing: border-box;
+  position: absolute;
 }
 
-.hero img {
-  object-fit: cover;
-  width: 100%;
+.highlight.hero.block {
+  position: relative;
+}
+
+.playkit-pre-playback-play-button,
+.playkit-pre-playback-play-button,
+.playkit-icon-start-over,
+.playkit-control-button,
+.playkit-icon-playkit-icon-rewind-10,
+.playkit-icon-volume-base,
+.playkit-icon-volume-waves,
+.playkit-icon-volume-mute,
+.playkit-icon-language,
+.playkit-icon-settings,
+.playkit-icon-maximize,
+.playkit-icon-minimize,
+.playkit-time-display,
+.playkit-bottom-bar,
+.playkit-spinner {
+  display: block !important;
+}
+
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  /* height: 100%; */
+  /* height: 100dvh; */
+  z-index: 1;
+  color: white;
+
+  position: relative;
+  height: 720px;
+  /* min-height: 100vh; */
+}
+
+.hero-overlay .hero-wrapper .hero-title {
+  padding-left: 4vw;
+  position: absolute;
+  bottom: 252px;
+  /* bottom: 30%; */
+  /* width: 50%; */
+  width: 1089px;
+  height: 300px;
+  padding: 0 0 0 64px;
+  color: white;
+  z-index: 1;
+
+  margin: 0;
+
+}
+
+.hero-overlay .hero-wrapper .hero-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
   height: 100%;
+  bottom: 20%;
+
+  position: absolute;
+  /* top: 460px; */
+  /* top: 595px; */
+
+  /* width: 50%; */
+  width: 600px;
+
+  padding: 0 0 0 64px;
+
+  z-index: 1;
+  color: white;
+
+  /* added from another */
+  margin: 0;
+  padding-top: 13px;
 }
 
-@media (width >= 900px) {
-  .hero {
-    padding: 40px 32px;
+/* Typography */
+.hero-overlay .hero-wrapper .hero-title {
+  align-self: stretch;
+  color: var(--Color-LillyBrand-White, #FFF);
+  /* font-family: 'FF-DIN-Pro-Regular'; */
+  font-family: var(--Typography-Font-Family-Ringside-Extra-Wide, "Ringside Extra Wide");
+  font-size: var(--Typography-Size-Ringside-display-hero-level-1, 100px);
+  font-style: normal;
+  font-weight: 900;
+  line-height: var(--Typography-Line-Height-Ringside-display-hero-level-1, 100px);
+  letter-spacing: -5px;
+}
+
+.hero-overlay .hero-wrapper .hero-description {
+  color: var(--Neutral000---White, #FFF);
+
+  /* Ringside/Heading 6/Regular */
+  font-family: var(--Typography-Font-Family-Ringside, Ringside);
+  font-size: var(--Typography-Ringside-Heading-6-font-size, 24px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--Typography-Ringside-Heading-6-line-height, 32px);
+  /* 133.333% */
+}
+
+
+
+h1 {
+  color: white !important;
+}
+
+.hero-wrapper .playkit-control-rewind,
+.hero-wrapper .playkit-control-forward,
+.hero-wrapper .playkit-time-display,
+.hero-wrapper .playkit-bottom-bar-area {
+  display: none !important;
+}
+
+/* .hero-wrapper a.button:any-link,
+.hero-wrapper button {
+  background-color: unset !important;
+} */
+
+.hero-wrapper .playkit-player .playkit-top-bar {
+  background: unset !important;
+}
+
+.hero-overlay-text {
+  color: white !important;
+  position: absolute !important;
+  bottom: 100px !important;
+  font-size: 36px !important;
+  top: 300px !important;
+}
+
+.hero-wrapper .playkit-right-controls {
+  /* No sound fix */
+  display: none !important;
+}
+
+.hero-wrapper .playkit-player .playkit-bottom-bar {
+  opacity: 1 !important;
+  transition: unset;
+}
+
+.hero-wrapper .playkit-floating-container.playkit-floating-active {
+  display: none !important;
+}
+
+.hero-wrapper .playkit-floating-poster.playkit-floating-poster-show {
+  display: block !important;
+}
+
+.hero-wrapper .playkit-icon-pause {
+  background-image: url('../../icons/Pause.png') !important;
+  width: 44px;
+  height: 44px;
+}
+
+.hero-wrapper .playkit-bottom-bar {
+  background: none !important;
+}
+
+.hero-wrapper .playkit-control-settings,
+.hero-wrapper .playkit-control-picture-in-picture,
+.hero-wrapper .playkit-control-fullscreen {
+  display: none !important;
+}
+
+.hero-wrapper .playkit-tooltip {
+  width: 44px !important;
+  height: 44px !important;
+  padding: 4px;
+  flex-shrink: 0;
+  border-radius: 258.824px;
+  background: rgba(0, 0, 0, 0.50);
+  backdrop-filter: blur(25px);
+}
+
+
+
+.hero-wrapper .playkit-player .playkit-control-button {
+  width: 37px;
+  height: 37px;
+}
+
+.hero-wrapper .playkit-engine {
+  object-fit: fill !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.playkit-volume-control-bar {
+  bottom: 0px !important;
+  top: 100%;
+  left: 5px !important;
+}
+
+.playkit-control-button-container {
+  margin: 0px 6px !important;
+}
+
+.hero-wrapper .playkit-player .playkit-bottom-bar {
+  bottom: unset !important;
+  top: 18%;
+  opacity: 1 !important;
+  padding-right: 64px;
+}
+
+.hero-wrapper .playkit-player .playkit-bottom-bar .playkit-controls-container {
+  justify-content: flex-end !important;
+  opacity: 1 !important;
+  gap: 5px;
+}
+
+.hero-wrapper .hero-wrapper .playkit-playback-controls {
+  position: static !important;
+  opacity: 1 !important;
+}
+
+.hero-wrapper .hero-wrapper .playkit-control-volume {
+  position: static !important;
+  opacity: 1 !important;
+}
+
+.hero-wrapper .playkit-tooltip {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.hero-wrapper * {
+  transition: none !important;
+  transform: none !important;
+}
+
+.hero-wrapper .playkit-player .playkit-bottom-bar {
+  opacity: 1 !important;
+  transition: unset !important;
+}
+
+.hero-wrapper .playkit-control-button-container.playkit-control-play-pause .playkit-control-button {
+  transition: unset !important;
+}
+
+.hero-wrapper .playkit-gui-area {
+  transition: none !important;
+  transition-property: none !important;
+  display: unset !important;
+  flex-flow: unset !important;
+}
+
+.hero-wrapper .playkit-control-button-container.playkit-control-volume i,
+.playkit-control-button-container.playkit-volume-control i {
+  position: absolute !important;
+  top: 5px !important;
+  left: 5px !important;
+  padding: 17px;
+}
+
+.hero-wrapper .playkit-center-playback-controls {
+  top: -100px !important;
+}
+
+.hero-wrapper .force-cursor-visible {
+  cursor: default !important;
+  /* Force the cursor to remain visible */
+}
+
+.hero-wrapper .playkit-volume-control-bar {
+  bottom: 0px;
+}
+
+.hero-wrapper .playkit-icon-volume-mute {
+  display: none !important;
+}
+
+.hero-wrapper .playkit-is-muted .playkit-icon-volume-mute {
+  display: block !important;
+}
+
+.hero-wrapper .force-cursor-visible {
+  cursor: default !important;
+  /* Force the cursor to remain visible */
+}
+
+.highlight .hero-wrapper h1 {
+  color: pink;
+  position: absolute;
+  z-index: 1;
+}
+
+.playkit-floating-container .playkit-floating-active-bottom .playkit-floating-active-right .playkit-floating-draggable .playkit-floating-active {
+  display: none !important;
+}
+
+.video-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  z-index: 2;
+  /* Ensure it appears above the video */
+  pointer-events: none;
+  /* Allow clicks to pass through to the video */
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 700px;
+  width: 0%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1;
+  padding-top: 100px;
+}
+
+.video-overlay .cards ul li {
+  background: none !important;
+  border: none !important;
+}
+
+.video-overlay .cards ul {
+  width: 900px;
+  grid-template-columns: repeat(auto-fit, minmax(147px, 1fr));
+  gap: 24px;
+}
+
+.video-overlay .cards>ul>li img {
+  width: 48px;
+  height: 48px;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
+.video-overlay .overlay-text {
+  text-align: left;
+  position: relative;
+  /* padding: 351px 175px 175px 251px; */
+  z-index: 2;
+  /* Ensure text is above the blurred background */
+  filter: none;
+  /* Remove blur from the text */
+}
+
+.video-overlay .overlay-text h2 {
+  color: var(--Color-LillyBrand-White, #FFF);
+  font-family: var(--Typography-Font-Family-Ringside, Ringside);
+  font-size: var(--Typography-Size-Ringside-heading-2, 48px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--Typography-Line-Height-Ringside-heading-2, 58px);
+  /* 120.833% */
+  letter-spacing: -0.96px;
+  margin-bottom: 48px;
+  padding: 0px 175px;
+}
+
+.video-overlay .overlay-text .cards-card-body h5 {
+  color: var(--Color-LillyBrand-White, #FFF);
+
+  /* Desktop/Ringside/Headline/H5 (Book) */
+  font-family: var(--Typography-Font-Family-Ringside, Ringside);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  /* 35.2px */
+  letter-spacing: -0.64px;
+}
+
+.video-overlay .overlay-text .cards-card-body p {
+  color: var(--Color-LillyBrand-White, #FFF);
+
+  /* Desktop/Ringside/Body/M (Book) */
+  font-family: var(--Typography-Font-Family-Ringside, Ringside);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  /* 26px */
+}
+
+.video-overlay .cards .cards-card-body {
+  margin: 0;
+}
+
+.video-overlay.show {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.scroll-btn {
+  display: none;
+}
+
+/* my code */
+@media (max-width: 900px) {
+  .hero-overlay .hero-wrapper .hero-title {
+    left: 16px;
+    width: 250px;
+    /* font-family: 'FF-DIN-Pro-Regular'; */
+  }
+
+  .video-overlay .cards ul {
+    width: auto;
+    gap: 0px;
+  }
+
+  .video-overlay .hero-carousel-buttons {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+  }
+
+  .hero-carousel-buttons a.button:hover,
+  .hero-carousel-buttons a.button:focus,
+  .hero-carousel-buttons button:hover,
+  .hero-carousel-buttons button:focus {
+    background-color: white;
+    cursor: pointer;
+  }
+
+  .hero-wrapper .playkit-volume-control {
+    transform: none;
+    max-width: 90%;
+  }
+
+  .hero-wrapper .playkit-player .playkit-tooltip {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .header-wrapper {
+    position: absolute !important;
+    top: 80vh !important;
+  }
+
+  .nav-brand .default-content-wrapper {
+    position: static !important;
+    top: 0 !important;
+    margin-left: 30% !important;
+  }
+
+  .hero-wrapper .playkit-player.playkit-size-xs:not(.playkit-state-idle).playkit-hover .playkit-center-playback-controls .playkit-icon {
+    width: 32px !important;
+    height: 32px !important;
+  }
+
+  .hero-wrapper .playkit-player.playkit-size-xs:not(.playkit-state-idle).playkit-hover .playkit-center-playback-controls .playkit-control-button {
+    padding: 0 !important;
+  }
+
+  .hero-wrapper .playkit-icon .playkit-icon-play,
+  .hero-wrapper .playkit-icon .playkit-icon-pause {
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 32px !important;
+    height: 32px !important;
+  }
+
+  .hero-wrapper .playkit-player.playkit-touch:not(.playkit-state-idle).playkit-hover .playkit-center-playback-controls .playkit-icon {
+    width: 32px !important;
+    height: 32px !important;
+  }
+
+  .hero-wrapper .playkit-playback-controls {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 44px !important;
+    height: 44px !important;
+  }
+
+  .hero-wrapper .playkit-player .playkit-bottom-bar .playkit-controls-container {
+    flex-direction: column !important;
+    align-items: flex-end !important;
+    gap: 10px !important;
+  }
+
+  .hero-wrapper .playkit-player .playkit-bottom-bar {
+    padding-right: 10px !important;
+  }
+
+  .video-overlay .overlay-text .cards-card-body h5 {
+    font-size: 28px;
+    padding: 0px;
+  }
+
+  .video-overlay .cards-wrapper ul {
+    display: flex;
+    position: relative;
+    padding: 0px 16px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+
+  .video-overlay .cards>ul>li {
+    flex: 0 0 calc(100% / 1.5 - 16px);
+
+  }
+
+  .video-overlay .overlay-text h2 {
+    padding: 0px 16px;
+    color: var(--Color-LillyBrand-White, #FFF);
+
+    /* Mobile/Ringside/Headline/H4 (Book) */
+    font-family: var(--Typography-Font-Family-Ringside, Ringside);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    /* 35.2px */
+    letter-spacing: -0.64px;
+  }
+
+  .video-overlay .overlay-text .cards-card-body p {
+    font-size: 14px;
+  }
+
+  .scroll-btn {
+    margin: 8px;
+    display: block;
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    border: none;
+  }
+
+  .scroll-btn img {
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+}
+
+@media (min-width: 350px) and (max-width: 768px) {
+  .hero-overlay .hero-wrapper .hero-description {
+    left: 16px;
+    width: 85%;
+    padding: 0px;
+    /* bottom: 12%; */
+    /* bottom: 7%; */
+    bottom: 3%;
+  }
+}
+
+@media (min-width: 380px) and (max-width: 1000px) {
+  .hero-overlay .hero-wrapper .hero-description {
+    left: 16px;
+    width: 85%;
+    padding: 0px;
+    /* bottom: 22%; */
+    /* bottom: 12%; */
+    /* bottom: 7%; */
+    bottom: 3%;
+  }
+}
+
+/* Additional Fix for Small Mobile Screens (≤ 400px width) */
+@media (min-width: 330px) and (max-width: 900px) {
+  .hero-wrapper .playkit-playback-controls {
+    display: block;
+    max-width: 80% !important;
+    width: 35px;
+    height: 35px;
+  }
+
+  .hero-overlay .hero-wrapper .hero-title {
+    padding: 0px;
+  }
+
+  .hero-overlay .hero-wrapper .hero-title {
+    color: var(--Color-LillyBrand-White, #FFF);
+    font-family: var(--Typography-Font-Family-Ringside-Extra-Wide, "Ringside Extra Wide");
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 100%;
+    letter-spacing: -2.4px;
+  }
+
+  .hero-wrapper .playkit-player .playkit-bottom-bar {
+    top: 5% !important;
   }
 }

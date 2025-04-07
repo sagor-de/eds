@@ -1,10 +1,11 @@
 {
   "mappings": [
-    "/content/aem-boilerplate/:/",
-    "/content/aem-boilerplate/configuration:/.helix/config.json",
-    "/content/aem-boilerplate/metadata:/metadata.json"
+    "/content/lilly-com-eds/:/",
+    "/content/lilly-com-eds/configuration:/.helix/config.json",
+    "/content/lilly-com-eds/metadata:/metadata.json",
+    "/content/lilly-com-eds/headers:/.helix/headers.json"
   ],
   "includes": [
-    "/content/aem-boilerplate/"
+    "/content/lilly-com-eds/"
   ]
 }

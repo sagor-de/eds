@@ -1,0 +1,28 @@
+.section.infobanner-container {
+    background-color: #FBF5F4;  
+}
+
+.section.infobanner-container h2 {
+    padding-top: 64px;
+}
+
+div[data-aue-model="infoitem"] {
+    height: 353px;
+    font-size: 20px;
+}
+
+div[data-aue-model="infoitem"] h4 {
+    font-size: 32px;
+}
+
+.infobanner.block {
+    margin:64px 0;
+}
+
+
+@media screen and (min-width: 768px) {
+    .infobanner.block {
+        display:flex
+    }
+    
+}

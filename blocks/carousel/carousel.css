@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.carousel-wrapper * {
+  box-sizing: border-box
+}
+/* body {font-family: Verdana, sans-serif; margin:0} */
+.mySlides {display: none}
+.carousel-wrapper img {
+  vertical-align: middle;
+}
+
+.carousel-wrapper h1,
+.carousel-wrapper p,
+.carousel-wrapper h2,
+.carousel-wrapper h3,
+.carousel-wrapper h4,
+.carousel-wrapper h5,
+.carousel-wrapper h6{
+  font-size: unset !important;
+  margin: unset !important;
+  font-weight: unset !important;
+  font-family: unset !important;
+  color: unset !important;
+}
+
+.carousel-wrapper{
+  padding: 0 !important;
+  margin: 0 !important;
+  max-width: unset !important;
+}
+.carousel-wrapper img{
+  height: 657px;
+}
+.carousel-wrapper .video-container{
+  height: 657px !important;
+  width: 100% !important;
+  vertical-align: middle;
+}
+/* Slideshow container */
+.carousel-wrapper .slideshow-container {
+  /* max-width: 1000px; */
+  position: relative;
+  /* margin: auto; */
+}
+.carousel-wrapper>div{
+  max-width: unset;
+}
+
+/* Next & previous buttons */
+.carousel-wrapper .prev,.carousel-wrapper .next {
+  cursor: pointer;
+  position: absolute;
+  top: 10%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  /* font-weight: bold; */
+  font-size: 24px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background: rgba(0, 0, 0, 0.50);
+  backdrop-filter: blur(25px);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 30px;
+}
+
+.carousel-wrapper .prev:hover,.carousel-wrapper .next:hover {
+  color: white !important;
+}
+
+/* Position the "next button" to the right */
+.carousel-wrapper .next {
+  /* right: 0; */
+  left: 100px;
+}
+
+.carousel-wrapper a{
+  text-decoration: none;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+/* .prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+} */
+
+/* Caption text */
+.carousel-wrapper .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.carousel-wrapper .content-area{
+  position: absolute;
+  left: 64px;
+  bottom: 64px;
+  color:white;
+}
+
+.carousel-wrapper .button-area a{
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  border-radius: 100px;
+  height: 48px;
+  padding: 12px 24px;
+  color: var(--Color-LillyBrand-Red, #D31710);
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.carousel-wrapper .button-area a:hover{
+  background-color: rgba(136, 92, 92, 0.2);
+}
+.carousel-wrapper .button-area .arrow-right{
+  width: 20px !important;
+  height: 20px !important;
+}
+.carousel-wrapper .button-area a.filled{
+  color: white;
+  background: var(--Color-LillyBrand-Red, #D31710);
+}
+.carousel-wrapper .button-area a.outlined{
+  color:#FFFFFF;
+  border: 1px solid #FFFFFF;
+}
+.carousel-wrapper .button-area{
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+.carousel-wrapper .sub-title-text{
+  font-size: 16px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 48px;
+}
+.carousel-wrapper .title-text{
+  color: white;
+  font-size: 36px;
+  font-weight: 400;
+  margin-top: 48px;
+  max-width: 533px;
+  letter-spacing: -0.36px;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+}
+
+.carousel-wrapper .slideCardContainer {
+  height: 239px;
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  margin-top: 4px;
+}
+
+.carousel-wrapper .slideCard {
+  cursor: pointer;
+  height: 100%;
+  display: inline-block;
+  flex: 1;
+  perspective: 1000px; /* Added for 3D flip effect */
+  position: relative;
+}
+
+.carousel-wrapper .flip-card-text {
+  font-family: "Montserrat", sans-serif;
+  display: none;
+  /* transform: translate(-50%, -50%); */
+  color:#6E1911;
+}
+.carousel-wrapper .eyebrow-text{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 22px;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: left;
+}
+.carousel-wrapper .eyebrow-desc{
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 22px;
+  font-size: 24px;
+  text-align: left;
+}
+
+.carousel-wrapper .slideCard .flip-card-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.carousel-wrapper .slideCard .flip-card-front,.carousel-wrapper .slideCard .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.carousel-wrapper .slideCard .flip-card-front {
+  background-color: grey;
+  color: black;
+  transition: background-color 0.6s;
+}
+.carousel-wrapper .flip-card-front img{
+  height: 100%;
+  width:100%
+}
+
+.carousel-wrapper .slideCard .flip-card-back {
+  background-color: #FFDAD4;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.carousel-wrapper .active .flip-card-inner,.carousel-wrapper .slideCard:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.carousel-wrapper .active .flip-card-front,.carousel-wrapper .slideCard:hover .flip-card-front {
+  background-color: transparent;
+}
+
+.carousel-wrapper .active .flip-card-back, .carousel-wrapper .slideCard:hover .flip-card-back {
+  background-color: #FFDAD4;
+  color: white;
+}
+
+.carousel-wrapper .active .flip-card-text,.carousel-wrapper .slideCard:hover .flip-card-text {
+  display: block;
+}
+.carousel-wrapper .quote-icon{
+  width: 32px !important;
+  height: 26px !important;
+}
+
+
+.carousel-wrapper .hide{
+  display: none;
+}
+
+
+/* .playkit-icon-start-over,
+.playkit-control-button,
+.playkit-icon-playkit-icon-rewind-10,
+.playkit-icon-volume-base,
+.playkit-icon-volume-waves,
+.playkit-icon-volume-mute,
+.playkit-icon-language,
+.playkit-icon-settings,
+.playkit-icon-maximize,
+.playkit-icon-minimize,
+.playkit-time-display,
+.playkit-bottom-bar,
+.playkit-spinner {
+  display: none !important;
+}
+.playkit-pre-playback-play-button,
+.playkit-pre-playback-play-button,
+.playkit-icon-pause{
+  display: block !important;
+} */
+.carousel-wrapper .playkit-floating-poster,.carousel-wrapper .playkit-icon-playkit-js-info {
+  display: none !important;
+}
+.carousel-wrapper .playkit-pre-playback-play-overlay .playkit-pre-playback-play-button{
+  right: 64px !important;
+  top: 64px !important;
+  left:unset !important;
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 50% !important;
+  background: rgba(0, 0, 0, 0.50) !important;
+  backdrop-filter: blur(25px) !important;
+  border: none !important;
+  padding: 10px !important; 
+}
+.carousel-wrapper .playkit-control-button{
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 50% !important;
+  background: rgba(0, 0, 0, 0.50) !important;
+  backdrop-filter: blur(25px) !important;
+  border: none !important;
+  padding: 10px !important; 
+}
+/* .carousel-wrapper .playkit-icon.playkit-icon-play,
+.carousel-wrapper .playkit-icon.playkit-icon-pause{
+
+} */
+/* .carousel-wrapper .playkit-bottom-bar{
+  display: none !important;
+} */
+.carousel-wrapper .playkit-bottom-bar-area, 
+.carousel-wrapper .playkit-control-settings,
+.carousel-wrapper .playkit-control-picture-in-picture,
+.carousel-wrapper .playkit-control-fullscreen,
+.carousel-wrapper .playkit-time-display, 
+.carousel-wrapper .playkit-control-button-container.playkit-control-rewind.playkit-no-idle-control, 
+.carousel-wrapper .playkit-control-button-container.playkit-control-forward.playkit-no-idle-control{
+  display: none !important;
+ }
+ .carousel-wrapper .playkit-control-volume{
+  position: absolute !important;
+  top: -630px !important;
+  right: 120px !important;
+ }
+.carousel-wrapper .playkit-control-button-container.playkit-control-play-pause{
+  display: block !important;
+  position: absolute !important;
+  top: -630px !important;
+  right: 64px !important;
+}
+.carousel-wrapper .playkit-player .playkit-bottom-bar{
+  opacity: 1 !important;
+  transition: unset;
+}
+.carousel-wrapper .playkit-floating-container.playkit-floating-active{
+  display: none;
+}
+.carousel-wrapper .playkit-floating-poster.playkit-floating-poster-show {
+  display: block !important;
+}
+.carousel-wrapper .playkit-icon-pause {
+  background-image: url('/content/dam/aem-eds-poc/Pause.png') !important;
+  width: 44px;
+  height: 44px;
+}
+.carousel-wrapper .playkit-player .playkit-top-bar {
+  display: none !important;
+}
+.carousel-wrapper a.button:any-link, .carousel-wrapper button {
+  overflow: unset !important;
+}
+.carousel-wrapper .playkit-engine{
+  object-fit: fill !important;
+}
+
+.carousel-wrapper .playkit-control-button.playkit-is-playing{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-wrapper .playkit-control-button-container.playkit-control-play-pause .playkit-control-button {
+  transition: unset !important;
+}
+
+
+.carousel-wrapper .playkit-control-button-container.playkit-control-volume i, 
+.carousel-wrapper .playkit-control-button-container.playkit-volume-control i {
+  top: 6px !important;
+  left: 8px !important;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
