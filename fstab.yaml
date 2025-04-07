@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: "https://author-p153303-e1585520.adobeaemcloud.com/bin/franklin.delivery/sagor-de/eds-de/main"
+    url: "https://author-p153303-e1585520.adobeaemcloud.com/bin/franklin.delivery/sagor-de/eds/main"
     type: "markup"
     suffix: ".html"
