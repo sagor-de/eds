@@ -5461,19 +5461,13 @@
         "id": "quote",
         "fields": [
            {
-             "component": "richtext",
-             "name": "quote",
-             "value": "",
-             "label": "Quote",
-             "valueType": "string"
-           },
-           {
-             "component": "text",
-             "valueType": "string",
-             "name": "author",
-             "label": "Author",
-             "value": ""
-           }
+            "component": "richtext",
+            "name": "rte",
+            "label": "Description",
+            "valueType": "string",
+            "required": true,
+            "description": "Enter description for additional context which can have styling such as Bold, italics and  ability to add text links."
+          }
          ]
       }
     ]
