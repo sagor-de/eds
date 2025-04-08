@@ -1,6 +1,6 @@
 {
   "mappings": [
-    "/content/eds-ll2/:/",
+    "/content/eds-ll/:/",
     "/content/eds-ll/configuration:/.helix/config.json",
     "/content/eds-ll/metadata:/metadata.json",
     "/content/eds-ll/headers:/.helix/headers.json"
