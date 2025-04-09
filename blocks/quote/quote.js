@@ -3,10 +3,6 @@ export default function decorate(block) {
       titleEl,
       authorEl,
       bgcolorEl,
-      ctaLinkEl,
-      ctaTargetEl,
-      exteriorLabelEl,
-      interiorLabelEl
     ] = block.children;
     console.log(titleEl);
     const title = titleEl.querySelector('p').innerText;
