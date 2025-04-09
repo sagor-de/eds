@@ -1,30 +1,75 @@
-.block.quote {
-    background-color: #ccc;
-    padding: 0 0 24px;
-    display: flex;
-    flex-direction: column;
-    margin: 1rem 0;
+body {
+	background-color: #292a2b;
+}
+.quote-wrapper {
+	display: flex;
+	height: 100vh;
+	padding: 0 20px;
+}
+.blockquote {
+	position: relative;
+	font-family: 'Barlow Condensed', sans-serif;
+	max-width: 620px;
+	margin: 80px auto;
+	align-self: center;
+}
+.blockquote h1 {
+	font-family: 'Abril Fatface', cursive;
+	position: relative;
+	color: #e74848;
+	font-size: 2.8rem;
+	font-weight: normal;
+	line-height: 1;
+	margin: 0;
+	border: 2px solid #fff;
+	border: solid 2px;
+	border-radius: 20px;
+	padding: 25px;
+}
+.blockquote h1 span{
+	color: #ffffff;
+}
+.blockquote h1:after {
+	content: "";
+	position: absolute;
+	border: 2px solid #e74848;
+	border-radius: 0 50px 0 0;
+	width: 60px;
+	height: 60px;
+	bottom: -62px;
+	left: 50px;
+	border-bottom: none;
+	border-left: none;
+	z-index: 3;
+}
+.blockquote h1:before {
+	content: "";
+	position: absolute;
+	width: 80px;
+	border: 6px solid #292a2b;
+	bottom: -3px;
+	left: 50px;
+	z-index: 2;
+}
+@media all and (min-width: 600px) {
+	.blockquote h1 {
+		font-size: 3rem;
+		line-height: 1.2;
+	}
+}
+.blockquote h4 {
+	position: relative;
+	color: #ffffff;
+	font-size: 1.3rem;
+	font-weight: 400;
+	line-height: 1.2;
+	margin: 0;
+	padding-top: 15px;
+	z-index: 1;
+	margin-left: 150px;
+	padding-left: 12px;
 }
 
-.block.quote blockquote {
-    margin: 16px;
-    text-indent: 0;
-}
-
-.block.quote > div:last-child > div {
-    margin: 0 16px;
-    font-size: small;
-    font-style: italic;
-    position: relative;
-}
-
-.block.quote > div:last-child > div::after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    height: 5px;
-    width: 30px;
-    background-color: darkgray;
+.blockquote h4:first-letter {
+	margin-left: -12px;
 }
