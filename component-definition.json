@@ -339,23 +339,6 @@
               }
             }
           }
-        },
-        {
-          "title": "Quote Test",
-          "id": "quotetest",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/wcm/components/text/v1/text",
-                "template": {
-                  "name": "Quote",
-                  "model": "quote",
-                  "quote": "<p>Think, McFly! Think!</p>",
-                  "author": "Biff Tannen"
-                }
-              }
-            }
-          }
         }
       ]
     }
