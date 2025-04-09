@@ -1,20 +1,21 @@
-import utils from "../../utils/utils.js";
-
 export default function decorate(block) {
-    const quoteWrapper = block.children;
-    console.log(quoteWrapper[1])
+    const [
+      titleEl,
+      authorEl,
+      ctaTextEl,
+      ctaLinkEl,
+      ctaTargetEl,
+      exteriorLabelEl,
+      interiorLabelEl
+    ] = block.children;
+    console.log(titleEl);
+    const title = titleEl.querySelector('p').innerText;
+    const author = authorEl.querySelector('p').innerText
     debugger;
-    const blockquote = document.createElement('blockquote');
-    blockquote.textContent = quoteWrapper.textContent.trim();
-    quoteWrapper.replaceChildren(blockquote);
-
- block.innerHTML = utils.sanitizeHtml(`
-    <div class="quote-wrapper">
-    <div class="blockquote">
-      <h1>Intuitive design happens when <span>current knowledge</span> is the same as the <span>target knowledge.</span></h1>
-      <h4>&mdash;Prosenjit Sikdar<br><em>Web Site Usability: A Designer's Guide</em></h4>
-    </div>
-  </div>`);
-
-
+    block.innerHTML = `<div class = "quote-wrapper">
+        <div class="blockquote">
+          <h1>${title}</h1>
+          <h4>&mdash;${author}<br><em>Web Site Usability: A Designer's Guide</em></h4>
+        </div>
+      </div>`;
   }
