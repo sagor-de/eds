@@ -132,7 +132,7 @@
         "component": "reference",
         "valueType": "string",
         "name": "image",
-        "label": "Icon/Logo",
+        "label": "Icon/Logo test",
         "required": true,
         "description": "Upload icon for the Icon Grid"
       },
@@ -159,7 +159,8 @@
         "description": "Enter Description for the Icon Grid",
         "required": true
       }
-    ]
+    ],
+    "multi": false
   },
   {
     "id": "columns",
