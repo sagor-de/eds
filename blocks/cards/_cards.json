@@ -55,6 +55,15 @@
   "filters": [
     {
       "id": "cards",
+      "fields": [
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "componenttitle",
+          "label": "Component Title",
+          "multi": false
+        }
+      ],
       "components": [
         "card"
       ]
