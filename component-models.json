@@ -139,6 +139,7 @@
       {
         "component": "number",
         "valueType": "number",
+        "value": 2,
         "name": "numberOfCards",
         "label": "Number of Cards",
         "description": "Choose the number of cards to be displayed in the component",
