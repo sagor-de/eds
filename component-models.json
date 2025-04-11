@@ -131,7 +131,7 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "componenttitle",
+        "name": "componentTitle",
         "label": "Component Title",
         "description": "Enter the title for the entire Card block",
         "multi": false
@@ -144,7 +144,10 @@
         "label": "Number of Cards",
         "description": "Choose the number of cards to be displayed in the component",
         "required": true,
-        "multi": false
+        "multi": false,
+        "validation": {
+            "numberMin": 2
+        }
       }
     ],
     "components": [

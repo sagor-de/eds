@@ -2,6 +2,13 @@ import { createOptimizedPicture } from '../../scripts/aem.js';
 import { moveInstrumentation } from '../../scripts/scripts.js';
 
 export default function decorate(block) {
+
+  const [
+    componentTitle,
+    numberOfCards,
+    ...cardList
+  ] = block.children;
+
   /* change to ul, li */
   const ul = document.createElement('ul');
   debugger;
