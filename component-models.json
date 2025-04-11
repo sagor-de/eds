@@ -133,6 +133,15 @@
         "valueType": "string",
         "name": "componenttitle",
         "label": "Component Title",
+        "description": "Enter the title for the entire Card block",
+        "multi": false
+      },
+      {
+        "component": "number",
+        "valueType": "number",
+        "name": "numberOfCards",
+        "label": "Number of Cards",
+        "description": "Choose the number of cards to be displayed in the component",
         "multi": false
       }
     ],
