@@ -132,7 +132,7 @@
         "component": "text",
         "valueType": "string",
         "name": "componentTitle",
-        "label": "Component Title",
+        "label": "Section Title",
         "description": "Enter the title for the entire Card block",
         "multi": false
       },
@@ -161,7 +161,7 @@
         "component": "reference",
         "valueType": "string",
         "name": "image",
-        "label": "Image Thumbnail",
+        "label": "Image",
         "required": true,
         "description": "Upload images for the card"
       },
@@ -221,6 +221,12 @@
             "value": "newTab"
           }
         ]
+      },
+      {
+        "component": "checkbox-group",
+        "name": "targetPath",
+        "label": "Exit Interstitial",
+        "description": "Select this checkbox to enable the modal experience that notifies user that they are leaving the site"
       }
     ]
   },
