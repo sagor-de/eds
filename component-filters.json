@@ -24,7 +24,14 @@
       "kalthuravideo",
       "text-component",
       "teaser",
-      "quote"
+      "quote",
+      "additional-links"
+    ]
+  },
+  {
+    "id": "additional-links",
+    "components": [
+      "additional-link"
     ]
   },
   {
