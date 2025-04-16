@@ -5595,10 +5595,10 @@
     "fields": [
        {
         "component": "container",
-        "label": "Container",
-        "name": "container",
+        "label": "Bottom Links",
+        "name": "bottomLinks",
         "valueType": "string",
-        "collapsible": true,
+        "collapsible": false,
         "fields": [
         {
           "component": "text-input",
@@ -5612,7 +5612,8 @@
           "name": "text2",
           "valueType": "string"
         }
-       ]
+       ],
+       "multi": true
        },
        {
          "component": "richtext",
