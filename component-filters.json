@@ -29,12 +29,6 @@
     ]
   },
   {
-    "id": "additional-links",
-    "components": [
-      "additional-link"
-    ]
-  },
-  {
     "id": "cards",
     "components": [
       "card"
