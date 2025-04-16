@@ -25,7 +25,14 @@
       "text-component",
       "teaser",
       "quote",
-      "additional-links"
+      "additional-links",
+      "enhanced-related-links"
+    ]
+  },
+  {
+    "id": "enhanced-related-links",
+    "components": [
+      "enhanced-related-link"
     ]
   },
   {
