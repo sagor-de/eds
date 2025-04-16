@@ -5612,8 +5612,7 @@
           "name": "text2",
           "valueType": "string"
         }
-       ],
-       "multi": true
+       ]
        },
        {
          "component": "richtext",
