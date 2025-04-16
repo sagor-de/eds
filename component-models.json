@@ -144,17 +144,11 @@
         "description": "Enter display text for the quick link"
       },
       {
-        "component": "text",
-        "valueType": "string",
-        "name": "linkURL",
-        "label": "Link URL",
-        "description": "Enter the URL to navigate when Quick Link is clicked"
-      },
-      {
         "component": "aem-content",
         "name": "linkURL",
         "label": "Link URL",
         "valueType": "string",
+        "required": true,
         "description": "Enter the URL to navigate when Quick Link is clicked",
         "validation": {
               "rootPath": "content/lilly-com-eds"
