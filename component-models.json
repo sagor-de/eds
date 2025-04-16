@@ -1,6 +1,6 @@
 [
   {
-    "id": "two-column-with-image",
+    "id": "two-clm-with-img",
     "fields": [
       {
         "component": "select",
