@@ -5598,6 +5598,7 @@
         "label": "Bottom Links",
         "name": "bottomLinks",
         "valueType": "string",
+        "multi": true,
         "collapsible": true,
         "fields": [
         {
