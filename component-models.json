@@ -5598,7 +5598,7 @@
         "label": "Bottom Links",
         "name": "bottomLinks",
         "valueType": "string",
-        "collapsible": false,
+        "collapsible": true,
         "fields": [
         {
           "component": "text-input",
