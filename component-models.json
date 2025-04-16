@@ -5603,7 +5603,7 @@
          "component": "richtext",
          "name": "quote",
          "value": "",
-         "label": "Quote",
+         "label": "Quote2",
          "valueType": "string"
        },
        {
