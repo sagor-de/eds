@@ -205,7 +205,7 @@
         "valueType": "number",
         "value": 2,
         "name": "numberOfCards",
-        "label": "Number of Cards",
+        "label": "Number of Cards Test",
         "description": "Choose the number of cards to be displayed in the component",
         "required": true,
         "multi": false,
