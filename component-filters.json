@@ -25,7 +25,13 @@
       "text-component",
       "teaser",
       "quote",
-      "quote2"
+      "additional-links"
+    ]
+  },
+  {
+    "id": "additional-links",
+    "components": [
+      "additional-link"
     ]
   },
   {

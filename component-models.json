@@ -126,6 +126,70 @@
     ]
   },
   {
+    "id": "additional-links",
+    "fields": [],
+    "components": [
+      "additional-link"
+    ]
+  },
+  {
+    "id": "additional-link",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "linkHeadline",
+        "label": "Link Headline",
+        "required": true,
+        "description": "Enter display text for the quick link"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "linkURL",
+        "label": "Link URL",
+        "description": "Enter the URL to navigate when Quick Link is clicked"
+      },
+      {
+        "component": "aem-content",
+        "name": "linkURL",
+        "label": "Link URL",
+        "valueType": "string",
+        "description": "Enter the URL to navigate when Quick Link is clicked",
+        "validation": {
+              "rootPath": "content/lilly-com-eds"
+          }
+      },
+      {
+        "component": "select",
+        "name": "targetPath",
+        "label": "Target Path",
+        "description": "Select the target path for the authored CTA URL",
+        "value": "sameTab",
+        "options": [
+          {
+            "name": "Same Tab",
+            "value": "sameTab"
+          },
+          {
+            "name": "New Tab",
+            "value": "newTab"
+          }
+        ]
+      },
+      {
+        "component": "checkbox-group",
+        "label": "Checkbox Group",
+        "name": "checkbox",
+        "valueType": "string",
+        "description": "Select this checkbox to enable the modal experience that notifies user that they are leaving the site",
+        "options": [
+          { "name": "Exit Interstitial", "value": "true" }
+        ]
+      }
+    ]
+  },
+  {
     "id": "cards",
     "fields": [
       {
@@ -5540,47 +5604,6 @@
          "name": "quote",
          "value": "",
          "label": "Quote2",
-         "valueType": "string"
-       },
-       {
-         "component": "text",
-         "valueType": "string",
-         "name": "author",
-         "label": "Author",
-         "value": ""
-       },
-       {
-        "component": "select",
-        "name": "bgcolor",
-        "value": "",
-        "label": "Background Color",
-        "description": "The marquee background color",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Red",
-            "value": "bg-red"
-          },
-          {
-            "name": "Green",
-            "value": "bg-green"
-          },
-          {
-            "name": "Blue",
-            "value": "bg-blue"
-          }
-        ]
-      }
-     ]
-  },
-  {
-    "id": "quote2",
-    "fields": [
-       {
-         "component": "richtext",
-         "name": "quote",
-         "value": "",
-         "label": "Quote",
          "valueType": "string"
        },
        {
