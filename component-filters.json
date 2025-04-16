@@ -26,13 +26,13 @@
       "teaser",
       "quote",
       "additional-links",
-      "enhanced-related-links"
+      "en-related-links"
     ]
   },
   {
-    "id": "enhanced-related-links",
+    "id": "en-related-links",
     "components": [
-      "enhanced-related-link"
+      "en-related-link"
     ]
   },
   {

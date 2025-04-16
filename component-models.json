@@ -184,14 +184,14 @@
     ]
   },
   {
-    "id": "enhanced-related-links",
+    "id": "en-related-links",
     "fields": [],
     "components": [
-      "enhanced-related-link"
+      "en-related-link"
     ]
   },
   {
-    "id": "enhanced-related-link",
+    "id": "en-related-link",
     "fields": [
       {
         "component": "text",
