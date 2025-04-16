@@ -11,7 +11,6 @@ export default function decorate(block) {
 
   /* change to ul, li */
   const ul = document.createElement('ul');
-  debugger;
   [...block.children].forEach((row) => {
     const li = document.createElement('li');
     moveInstrumentation(row, li);

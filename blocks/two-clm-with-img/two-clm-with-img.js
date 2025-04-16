@@ -1,20 +1,7 @@
- 
 export default function decorate(block) {
     const childElements = block.children;
-    const [
-        placementEl,
-        imageEl,
-        imageAltrEl,
-        iconImgEl,
-        iconImgAltEl,
-        titleEl,
-        descriptionEl,
-        ctaLabelEl,
-        ctaButtonE1,
-        targetPathEl,
-        exitInterstitialEl
-    ] = block.children;
-    debugger;
+    console.log('childElements', childElements);
+ 
     const placement = childElements[0].querySelector('p') ? childElements[0].querySelector('p').textContent : '';
     const image = childElements[1].querySelector('img') ? childElements[1].querySelector('img') : '';
     const imageAlt = childElements[2];
