@@ -83,7 +83,7 @@
       "id": "blocks",
       "components": [
         {
-          "title": "Two Column With Image",
+          "title": "Two Column With Image 2",
           "id": "two-clm-with-img",
           "plugins": {
             "xwalk": {
