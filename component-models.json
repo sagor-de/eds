@@ -377,7 +377,7 @@
       }
     ],
     "validation": {
-          "max": 2
+          "numberMax": 2
       },
     "components": [
       "card"
@@ -463,7 +463,7 @@
       }
     ],
     "validation": {
-          "max": 2
+          "numberMax": 2
       }
   },
   {
