@@ -376,6 +376,9 @@
         }
       }
     ],
+    "validation": {
+          "max": 2
+      },
     "components": [
       "card"
     ]
@@ -458,7 +461,10 @@
           { "name": "Exit Interstitial", "value": "true" }
         ]
       }
-    ]
+    ],
+    "validation": {
+          "max": 2
+      }
   },
   {
     "id": "columns",
