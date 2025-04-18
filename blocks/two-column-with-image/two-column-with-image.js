@@ -1,7 +1,7 @@
 export default function decorate(block) {
     const childElements = block.children;
     console.log('childElements', childElements);
- 
+    debugger;
     const placement = childElements[0].querySelector('p') ? childElements[0].querySelector('p').textContent : '';
     const image = childElements[1].querySelector('img') ? childElements[1].querySelector('img') : '';
     const imageAlt = childElements[2];
