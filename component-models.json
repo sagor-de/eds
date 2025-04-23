@@ -1,17 +1,5 @@
 [
   {
-    "id": "text-custom",
-    "fields": [
-      {
-        "component": "text",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
     "id": "two-clm-with-img",
     "fields": [
       {
@@ -5838,5 +5826,17 @@
         ]
       }
      ]
+  },
+  {
+    "id": "quote-block",
+    "fields": [
+      {
+        "component": "text",
+        "name": "quote",
+        "value": "",
+        "label": "Quote",
+        "valueType": "string"
+      }
+    ]
   }
 ]

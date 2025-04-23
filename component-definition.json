@@ -422,15 +422,30 @@
       "id": "java",
       "components": [
         {
-          "title": "Text Custom",
-          "id": "text-custom",
+          "title": "Quote Block",
+          "id": "quote-block",
           "plugins": {
             "xwalk": {
               "page": {
-                "resourceType": "wknd/components/text",
+                "resourceType": "wkndxwalkbackend/components/quote",
                 "template": {
-                  "name": "Text Custom",
-                  "model": "text-custom"
+                  "name": "Quote Block",
+                  "model": "quote-block"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "ContentFragment Block",
+          "id": "contentfragment-block",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "wkndxwalkbackend/components/franklincontentfragment",
+                "template": {
+                  "name": "ContentFragment Block",
+                  "model": "contentfragment-block"
                 }
               }
             }
