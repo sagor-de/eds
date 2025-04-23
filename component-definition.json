@@ -437,6 +437,21 @@
           }
         },
         {
+          "title": "Text Block",
+          "id": "text-block",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "wkndxwalkbackend/components/text",
+                "template": {
+                  "name": "Text Block",
+                  "model": "text-block"
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "ContentFragment Block",
           "id": "contentfragment-block",
           "plugins": {
