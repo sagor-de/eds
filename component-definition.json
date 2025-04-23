@@ -442,7 +442,7 @@
           "plugins": {
             "xwalk": {
               "page": {
-                "resourceType": "wkndxwalkbackend/components/text",
+                "resourceType": "wknd/components/title",
                 "template": {
                   "name": "Text Block",
                   "model": "text-block"

@@ -5843,7 +5843,7 @@
     "id": "text-block",
     "fields": [
       {
-        "component": "richtext",
+        "component": "text",
         "name": "text",
         "value": "",
         "label": "Text",
