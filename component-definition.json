@@ -416,6 +416,27 @@
           }
         }
       ]
+    },
+    {
+      "title": "Java Based Components",
+      "id": "java",
+      "components": [
+        {
+          "title": "Text Custom",
+          "id": "text-custom",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "wknd/components/text",
+                "template": {
+                  "name": "Text Custom",
+                  "model": "text-custom"
+                }
+              }
+            }
+          }
+        }
+      ]
     }
   ]
 }
