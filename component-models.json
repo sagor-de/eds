@@ -355,6 +355,23 @@
     "id": "cards",
     "fields": [
       {
+        "component": "select",
+        "name": "variations",
+        "label": "Carousel Variations",
+        "description": "Select the carousel variations",
+        "value": "sameTab",
+        "options": [
+          {
+            "name": "Dot Pagination",
+            "value": "dotPagination"
+          },
+          {
+            "name": "Number Pagination",
+            "value": "numberPagination"
+          }
+        ]
+      },
+      {
         "component": "text",
         "valueType": "string",
         "name": "componentTitle",
