@@ -1,16 +1,11 @@
 import utils from '../../utils/utils.js'
 
 export default function decorate(block) {
-    const [
-        titleEl,
-        authorEl,
-        bgcolorEl,
-    ] = block.children;
+    const valueChild = block.children;
     debugger;
-    console.log(titleEl);
-    const title = titleEl.querySelector('p').innerText;
-    const author = authorEl.querySelector('p').innerText;
-    const bgcolor = bgcolorEl.querySelector('p').innerText;
+    const title = valueChild[2].querySelector('p').innerText;
+    const author = valueChild[3].querySelector('p').innerText;
+    const bgcolor = valueChild[4].querySelector('p').innerText;
 
     block.innerHTML = utils.sanitizeHtml(`<div class = "${bgcolor}">
         <div class="blockquote">
