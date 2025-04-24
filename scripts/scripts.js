@@ -5,12 +5,62 @@ import {
   decorateIcons,
   decorateSections,
   decorateBlocks,
+  fetchPlaceholders,
   decorateTemplateAndTheme,
   waitForFirstImage,
   loadSection,
+
   loadSections,
   loadCSS,
 } from './aem.js';
+
+
+/**
+ * create an element.
+ * @param {string} tagName the tag for the element
+ * @param {object} props properties to apply
+ * @param {string|Element} html content to add
+ * @returns the element
+ */
+export function createTag(tagName, props, html) {
+  const elem = document.createElement(tagName);
+  if (props) {
+    Object.keys(props).forEach((propName) => {
+      const val = props[propName];
+      if (propName === 'class') {
+        const classesArr = (typeof val === 'string') ? val.split(' ') : val;
+        elem.classList.add(...classesArr);
+      } else {
+        elem.setAttribute(propName, val);
+      }
+    });
+  }
+
+  if (html) {
+    const appendEl = (el) => {
+      if (el instanceof HTMLElement || el instanceof SVGElement) {
+        elem.append(el);
+      } else {
+        elem.insertAdjacentHTML('beforeend', sanitizeHTML(el));
+      }
+    };
+
+    if (Array.isArray(html)) {
+      html.forEach(appendEl);
+    } else {
+      appendEl(html);
+    }
+  }
+
+  return elem;
+}
+
+export async function getLocalePlaceholders() {
+  const isSpanish = window.location.pathname.includes('/es/') || window.location.pathname.endsWith('/es');
+  const prefix = isSpanish ? '/es' : '/en';
+  return fetchPlaceholders(prefix);
+}
+
 
 /**
  * Moves all the attributes from a given elmenet to another given element.
