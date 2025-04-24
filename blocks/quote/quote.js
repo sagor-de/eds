@@ -6,6 +6,7 @@ export default function decorate(block) {
         authorEl,
         bgcolorEl,
     ] = block.children;
+    debugger;
     console.log(titleEl);
     const title = titleEl.querySelector('p').innerText;
     const author = authorEl.querySelector('p').innerText;
