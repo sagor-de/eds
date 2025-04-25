@@ -5780,26 +5780,10 @@
          "value": ""
        },
        {
-        "component": "select",
+        "component": "hidden",
         "name": "classes",
         "value": "bg-test",
-        "label": "Background Color",
-        "description": "The marquee background color",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Red",
-            "value": "bg-red"
-          },
-          {
-            "name": "Green",
-            "value": "bg-green"
-          },
-          {
-            "name": "Blue",
-            "value": "bg-blue"
-          }
-        ]
+        "valueType": "string"
       }
      ]
   },
