@@ -5782,7 +5782,8 @@
        {
         "name": "Block Class",
         "model": "text-only",
-        "text": "bg-test"
+        "text": "bg-test",
+        "value": "bg-test-value"
       }
      ]
   },
