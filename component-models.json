@@ -5780,10 +5780,15 @@
          "value": ""
        },
        {
-        "component": "text",
-        "name": "theme",
-        "label": "Theme",
-        "value": "theme"
+        "component": "custom-asset-namespace:custom-asset",
+        "valueType": "string",
+        "name": "media_desktopPosterFileReference",
+        "label": "Desktop Poster Image",
+        "value": "",
+        "description": "Defines the the poster image of the video that will play on desktop. It will be displayed while loading the page.",
+        "required": true,
+        "configUrl":"/content/metafox/rs.resource/tools/image-config.json",
+        "multi": false
       }
      ]
   },
