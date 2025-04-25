@@ -5827,13 +5827,6 @@
         "label": "Table Title"
       },
       {
-        "component": "boolean",
-        "label": "Header Row",
-        "name": "isHeaderRow",
-        "valueType": "boolean",
-        "description": "It will create the first row of the table as the header row."
-      },
-      {
         "component": "select",
         "label": "Select No. Columns",
         "name": "noOfColumns",
@@ -5915,38 +5908,6 @@
             "component": "text",
             "name": "columnName3",
             "label": "3rd Column Name"
-          }
-        ]
-      },
-      {
-        "component": "select",
-        "label": "Select Table Variation",
-        "name": "tableVariation",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Default",
-            "value": "default"
-          },
-          {
-            "name": "Default List Row",
-            "value": "defaultListRow"
-          },
-          {
-            "name": "Icon Variation",
-            "value": "icon"
-          },
-          {
-            "name": "Level Variation",
-            "value": "level"
-          },
-          {
-            "name": "Level Variation color",
-            "value": "LevelColor"
-          },
-          {
-            "name": "Button Row Variation",
-            "value": "buttonRow"
           }
         ]
       }
