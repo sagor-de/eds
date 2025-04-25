@@ -5780,10 +5780,10 @@
          "value": ""
        },
        {
-        "name": "Block Class",
-        "model": "text-only",
-        "text": "bg-test",
-        "value": "bg-test-value"
+        "component": "text",
+        "name": "theme",
+        "label": "Theme",
+        "value": "theme"
       }
      ]
   },
