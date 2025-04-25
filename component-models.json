@@ -5890,7 +5890,7 @@
       {
         "component": "container",
         "label": "Column Name",
-        "name": "columnNameMain",
+        "name": "columnNameMain2",
         "valueType": "string",
         "condition": {
           "===": [
