@@ -5862,9 +5862,9 @@
         ]
       },
       {
-        "component": "text-input",
-        "label": "Image Details",
-        "name": "carousalImage1",
+        "component": "container",
+        "label": "Column Name",
+        "name": "columnName",
         "valueType": "string",
         "condition": {
           "===": [
@@ -5873,22 +5873,19 @@
             },
             "twoCol"
           ]
-        }
-      },
-      {
-        "component": "text-input",
-        "label": "Image Details",
-        "name": "carousalImage2",
-        "valueType": "string",
-        "condition": {
-          "===": [
-            {
-              "var": "noOfColumns"
-            },
-            "twoCol",
-            "threeCol"
-          ]
-        }
+        },
+        "fields": [
+          {
+            "component": "text",
+            "name": "columnName1",
+            "label": "1st Column Name"
+          },
+          {
+            "component": "text",
+            "name": "columnName2",
+            "label": "2nd Column Name"
+          }
+        ]
       },
       {
         "component": "select",
