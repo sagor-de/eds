@@ -5780,10 +5780,9 @@
          "value": ""
        },
        {
-        "component": "hidden",
-        "name": "classes",
-        "value": "bg-test",
-        "valueType": "string"
+        "name": "Block Class",
+        "model": "text-only",
+        "text": "bg-test"
       }
      ]
   },
