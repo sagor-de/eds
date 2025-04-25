@@ -28,9 +28,14 @@
       "quote",
       "quote-block",
       "text-block",
+      "table",
       "additional-links",
       "en-related-links"
     ]
+  },
+  {
+    "id": "table",
+    "components": ["row"]
   },
   {
     "id": "en-related-links",
