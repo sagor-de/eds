@@ -1,6 +1,7 @@
 import utils from '../../utils/utils.js'
 
 export default function decorate(block) {
+    debugger;
     const [
         titleEl,
         authorEl,

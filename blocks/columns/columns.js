@@ -1,11 +1,12 @@
 /* eslint-disable no-case-declarations */
 import { createTag, getLocalePlaceholders } from '../../scripts/scripts.js';
+debugger;
+import {decorate} from '../quote/quote.js'
 console.log("======================================");
-const { arrowRight, arrowDown } = await getLocalePlaceholders();
+const { arrowRight, arrowDown } = await getLocalePlaceholders();x
 export default function decorate(block) {
-  debugger
   const cols = [...block.firstElementChild.children];
-  debugger;
+  // decorate(block);
   block.classList.add(`columns-${cols.length}-cols`);
 
   if (block.classList.contains('placeholder')) {

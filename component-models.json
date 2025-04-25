@@ -5781,8 +5781,8 @@
        },
        {
         "component": "select",
-        "name": "bgcolor",
-        "value": "",
+        "name": "classes",
+        "value": "bg-test",
         "label": "Background Color",
         "description": "The marquee background color",
         "valueType": "string",
