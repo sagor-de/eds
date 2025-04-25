@@ -5864,7 +5864,7 @@
       {
         "component": "container",
         "label": "Column Name",
-        "name": "columnName",
+        "name": "columnNameMain",
         "valueType": "string",
         "condition": {
           "===": [
@@ -5890,7 +5890,7 @@
       {
         "component": "container",
         "label": "Column Name",
-        "name": "columnName2",
+        "name": "columnNameMain",
         "valueType": "string",
         "condition": {
           "===": [
