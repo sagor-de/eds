@@ -5888,6 +5888,37 @@
         ]
       },
       {
+        "component": "container",
+        "label": "Column Name",
+        "name": "columnName",
+        "valueType": "string",
+        "condition": {
+          "===": [
+            {
+              "var": "noOfColumns"
+            },
+            "twoCol"
+          ]
+        },
+        "fields": [
+          {
+            "component": "text",
+            "name": "columnName1",
+            "label": "1st Column Name"
+          },
+          {
+            "component": "text",
+            "name": "columnName2",
+            "label": "2nd Column Name"
+          },
+          {
+            "component": "text",
+            "name": "columnName3",
+            "label": "3rd Column Name"
+          }
+        ]
+      },
+      {
         "component": "select",
         "label": "Select Table Variation",
         "name": "tableVariation",
