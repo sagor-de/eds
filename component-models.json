@@ -5862,11 +5862,10 @@
         ]
       },
       {
-        "component": "container",
+        "component": "text-input",
         "label": "Image Details",
         "name": "carousalImage1",
         "valueType": "string",
-        "collapsible": true,
         "condition": {
           "===": [
             {
@@ -5874,20 +5873,7 @@
             },
             "twoCol"
           ]
-        },
-        "fields": [
-          {
-            "component": "reference",
-            "name": "image1",
-            "label": "Image",
-            "multi": false
-          },
-          {
-            "component": "text",
-            "name": "imageAlt1",
-            "label": "Alt Text"
-          }
-        ]
+        }
       },
       {
         "component": "select",
