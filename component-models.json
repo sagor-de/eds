@@ -5838,10 +5838,9 @@
     "id": "row",
     "fields": [
       {
-        "component": "ritchtext-input",
+        "component": "richtext",
         "valueType": "string",
         "name": "rowRTEValue",
-        "value": "",
         "label": "Row Value",
         "description": "Enter The Value",
         "required": true,
