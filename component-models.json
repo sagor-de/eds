@@ -5827,6 +5827,7 @@
         "label": "Column Name",
         "description": "Enter The Column Name",
         "required": true,
+        "multi": true,
         "validation": {
             "maxSize": 6
         }
@@ -5844,6 +5845,7 @@
         "label": "Row Value",
         "description": "Enter The Value",
         "required": true,
+        "multi": true,
         "validation": {
             "maxSize": 6
         }
