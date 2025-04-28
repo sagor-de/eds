@@ -5839,7 +5839,7 @@
     "fields": [
       {
         "component": "richtext",
-        "valueType": "string",
+        "valueType": "string[]",
         "name": "rowRTEValue",
         "label": "Row Value",
         "value": "",
