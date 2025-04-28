@@ -5838,7 +5838,7 @@
     "id": "row",
     "fields": [
       {
-        "component": "richtext",
+        "component": "text-input",
         "valueType": "string",
         "name": "rowRTEValue",
         "value": "",
