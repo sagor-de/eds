@@ -5842,6 +5842,7 @@
         "valueType": "string",
         "name": "rowRTEValue",
         "label": "Row Value",
+        "value": "",
         "description": "Enter The Value",
         "required": true,
         "multi": true,
