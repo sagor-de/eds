@@ -5840,7 +5840,7 @@
       {
         "component": "richtext",
         "valueType": "string",
-        "name": "rowValue",
+        "name": "rowRTEValue",
         "value": "",
         "label": "Row Value",
         "description": "Enter The Value",
