@@ -5821,7 +5821,7 @@
     "fields": [
       {
         "component": "text-input",
-        "valueType": "string",
+        "valueType": "string[]",
         "name": "columnName",
         "value": "",
         "label": "Column Name",
