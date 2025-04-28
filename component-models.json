@@ -5822,94 +5822,14 @@
       {
         "component": "text-input",
         "valueType": "string",
-        "name": "tableTitle",
+        "name": "columnName",
         "value": "",
-        "label": "Table Title"
-      },
-      {
-        "component": "select",
-        "label": "Select No. Columns",
-        "name": "noOfColumns",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "2 Column",
-            "value": "twoCol"
-          },
-          {
-            "name": "3 Column",
-            "value": "threeCol"
-          },
-          {
-            "name": "4 Column",
-            "value": "fourCol"
-          },
-          {
-            "name": "5 Column",
-            "value": "fiveCol"
-          },
-          {
-            "name": "6 Column",
-            "value": "sixCol"
-          }
-        ]
-      },
-      {
-        "component": "container",
         "label": "Column Name",
-        "name": "columnNameMain",
-        "valueType": "string",
-        "condition": {
-          "===": [
-            {
-              "var": "noOfColumns"
-            },
-            "twoCol"
-          ]
-        },
-        "fields": [
-          {
-            "component": "text",
-            "name": "columnName1",
-            "label": "1st Column Name"
-          },
-          {
-            "component": "text",
-            "name": "columnName2",
-            "label": "2nd Column Name"
-          }
-        ]
-      },
-      {
-        "component": "container",
-        "label": "Column Name",
-        "name": "columnNameMain2",
-        "valueType": "string",
-        "condition": {
-          "===": [
-            {
-              "var": "noOfColumns"
-            },
-            "threeCol"
-          ]
-        },
-        "fields": [
-          {
-            "component": "text",
-            "name": "columnName1",
-            "label": "1st Column Name"
-          },
-          {
-            "component": "text",
-            "name": "columnName2",
-            "label": "2nd Column Name"
-          },
-          {
-            "component": "text",
-            "name": "columnName3",
-            "label": "3rd Column Name"
-          }
-        ]
+        "description": "Enter The Column Name",
+        "required": true,
+        "validation": {
+            "maxSize": 6
+        }
       }
     ]
   },
@@ -5918,27 +5838,15 @@
     "fields": [
       {
         "component": "richtext",
-        "name": "colOneDescription",
-        "label": "Column 1 Description",
-        "valueType": "string"
-      },
-      {
-        "component": "richtext",
-        "name": "colTwoDescription",
-        "label": "Column 2 Description",
-        "valueType": "string"
-      },
-      {
-        "component": "richtext",
-        "name": "colThreeDescription",
-        "label": "Column 3 Description",
-        "valueType": "string"
-      },
-      {
-        "component": "richtext",
-        "name": "colFourDescription",
-        "label": "Column 4 Description",
-        "valueType": "string"
+        "valueType": "string",
+        "name": "rowValue",
+        "value": "",
+        "label": "Row Value",
+        "description": "Enter The Value",
+        "required": true,
+        "validation": {
+            "maxSize": 6
+        }
       }
     ]
   }
