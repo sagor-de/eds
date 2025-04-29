@@ -5,14 +5,62 @@ import {
   decorateIcons,
   decorateSections,
   decorateBlocks,
+  fetchPlaceholders,
   decorateTemplateAndTheme,
-  getMetadata,
   waitForFirstImage,
   loadSection,
+
   loadSections,
   loadCSS,
-  sampleRUM,
 } from './aem.js';
+
+
+/**
+ * create an element.
+ * @param {string} tagName the tag for the element
+ * @param {object} props properties to apply
+ * @param {string|Element} html content to add
+ * @returns the element
+ */
+export function createTag(tagName, props, html) {
+  const elem = document.createElement(tagName);
+  if (props) {
+    Object.keys(props).forEach((propName) => {
+      const val = props[propName];
+      if (propName === 'class') {
+        const classesArr = (typeof val === 'string') ? val.split(' ') : val;
+        elem.classList.add(...classesArr);
+      } else {
+        elem.setAttribute(propName, val);
+      }
+    });
+  }
+
+  if (html) {
+    const appendEl = (el) => {
+      if (el instanceof HTMLElement || el instanceof SVGElement) {
+        elem.append(el);
+      } else {
+        elem.insertAdjacentHTML('beforeend', sanitizeHTML(el));
+      }
+    };
+
+    if (Array.isArray(html)) {
+      html.forEach(appendEl);
+    } else {
+      appendEl(html);
+    }
+  }
+
+  return elem;
+}
+
+export async function getLocalePlaceholders() {
+  const isSpanish = window.location.pathname.includes('/es/') || window.location.pathname.endsWith('/es');
+  const prefix = isSpanish ? '/es' : '/en';
+  return fetchPlaceholders(prefix);
+}
+
 
 /**
  * Moves all the attributes from a given elmenet to another given element.
@@ -27,7 +75,7 @@ export function moveAttributes(from, to, attributes) {
   attributes.forEach((attr) => {
     const value = from.getAttribute(attr);
     if (value) {
-      to?.setAttribute(attr, value);
+      to.setAttribute(attr, value);
       from.removeAttribute(attr);
     }
   });
@@ -58,17 +106,6 @@ async function loadFonts() {
   } catch (e) {
     // do nothing
   }
-}
-
-function autolinkModals(doc) {
-  doc.addEventListener('click', async (e) => {
-    const origin = e.target.closest('a');
-    if (origin && origin.href && origin.href.includes('/modals/')) {
-      e.preventDefault();
-      const { openModal } = await import(`${window.hlx.codeBasePath}/blocks/modal/modal.js`);
-      openModal(origin.href);
-    }
-  });
 }
 
 /**
@@ -103,19 +140,14 @@ export function decorateMain(main) {
  * @param {Element} doc The container element
  */
 async function loadEager(doc) {
-  doc.documentElement.lang = 'en';
+  document.documentElement.lang = 'en';
   decorateTemplateAndTheme();
-  if (getMetadata('breadcrumbs').toLowerCase() === 'true') {
-    doc.body.dataset.breadcrumbs = true;
-  }
   const main = doc.querySelector('main');
   if (main) {
     decorateMain(main);
-    doc.body.classList.add('appear');
+    document.body.classList.add('appear');
     await loadSection(main.querySelector('.section'), waitForFirstImage);
   }
-
-  sampleRUM.enhance();
 
   try {
     /* if desktop (proxy for fast connection) or fonts already loaded, load fonts.css */
@@ -132,8 +164,6 @@ async function loadEager(doc) {
  * @param {Element} doc The container element
  */
 async function loadLazy(doc) {
-  autolinkModals(doc);
-
   const main = doc.querySelector('main');
   await loadSections(main);
 
@@ -156,7 +186,6 @@ function loadDelayed() {
   // eslint-disable-next-line import/no-cycle
   window.setTimeout(() => import('./delayed.js'), 3000);
   // load anything that can be postponed to the latest here
-  import('./sidekick.js').then(({ initSidekick }) => initSidekick());
 }
 
 async function loadPage() {
