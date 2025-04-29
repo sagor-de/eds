@@ -28,14 +28,39 @@
       "quote",
       "quote-block",
       "text-block",
+      "table-multi",
       "table",
       "additional-links",
       "en-related-links"
     ]
   },
   {
-    "id": "table",
+    "id": "table-multi",
     "components": ["row"]
+  },
+  {
+    "id": "table",
+    "components": [
+      "table-row"
+    ]
+  },
+  {
+    "id": "table-2-columns",
+    "components": [
+      "table-col-2"
+    ]
+  },
+  {
+    "id": "table-3-columns",
+    "components": [
+      "table-col-3"
+    ]
+  },
+  {
+    "id": "table-4-columns",
+    "components": [
+      "table-col-4"
+    ]
   },
   {
     "id": "en-related-links",
