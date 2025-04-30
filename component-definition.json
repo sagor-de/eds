@@ -472,7 +472,7 @@
                 "template": {
                   "name": "Row",
                   "model": "table-row",
-                  "column1text": "Column1"
+                  "column1text": "Column1 Description"
                 }
               }
             }
@@ -488,8 +488,8 @@
                 "template": {
                   "name": "Row",
                   "model": "table-col-2",
-                  "column1text": "Column1",
-                  "column2text": "Column2"
+                  "column1text": "Column1 Description",
+                  "column2text": "Column2 Description"
                 }
               }
             }
@@ -505,9 +505,9 @@
                 "template": {
                   "name": "Row",
                   "model": "table-col-3",
-                  "column1text": "Column1",
-                  "column2text": "Column2",
-                  "column3text": "Column3"
+                  "column1text": "Column1 Description",
+                  "column2text": "Column2 Description",
+                  "column3text": "Column3 Description"
                 }
               }
             }
@@ -523,10 +523,10 @@
                 "template": {
                   "name": "Row",
                   "model": "table-col-4",
-                  "column1text": "Column1",
-                  "column2text": "Column2",
-                  "column3text": "Column3",
-                  "column4text": "Column4"
+                  "column1text": "Column1 Description",
+                  "column2text": "Column2 Description",
+                  "column3text": "Column3 Description",
+                  "column4text": "Column4 Description"
                 }
               }
             }
