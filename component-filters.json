@@ -63,6 +63,18 @@
     ]
   },
   {
+    "id": "table-5-columns",
+    "components": [
+      "table-col-5"
+    ]
+  },
+  {
+    "id": "table-6-columns",
+    "components": [
+      "table-col-6"
+    ]
+  },
+  {
     "id": "en-related-links",
     "components": [
       "en-related-link"
