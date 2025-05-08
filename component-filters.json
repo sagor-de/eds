@@ -2,7 +2,8 @@
   {
     "id": "main",
     "components": [
-      "section"
+      "section",
+      "cont-sec-container"
     ]
   },
   {
@@ -32,8 +33,7 @@
       "table",
       "additional-links",
       "en-related-links",
-      "aem-content-fragment",
-      "cont-sec-container"
+      "aem-content-fragment"
     ]
   },
   {

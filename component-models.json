@@ -6138,7 +6138,6 @@
       },
       {
         "component": "checkbox-group",
-        "label": "Rounded Borders",
         "name": "roundedBorders",
         "valueType": "string",
         "description": "Select check or unchecked for rounded borders",
