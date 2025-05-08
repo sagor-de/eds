@@ -6054,5 +6054,98 @@
         "variationName": "contentFragmentVariation"
       }
     ]
+  },
+  {
+    "id": "cont-sec-container",
+    "fields": [
+      {
+        "component": "select",
+        "name": "backgroundColor",
+        "label": "Background Color",
+        "description": "Select the background color",
+        "required": true,
+        "value": "none",
+        "options": [
+          {
+            "name": "Primary - Red",
+            "value": "primary-red"
+          },
+          {
+            "name": "Secondary - Green",
+            "value": "secondary-green"
+          },
+          {
+            "name": "Tertiary - Blue",
+            "value": "tertiary-blue"
+          },
+          {
+            "name": "Quaternary - Gray",
+            "value": "quaternary-gray"
+          },
+          {
+            "name": "Transparent",
+            "value": "transparent"
+          },
+          {
+            "name": "None",
+            "value": "none"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "additionalPadding",
+        "label": "Additional Padding",
+        "description": "Select the padding for each side so that authors have the ability to specify spacing",
+        "required": true,
+        "value": "none",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Narrow",
+            "value": "narrow"
+          },
+          {
+            "name": "Wide",
+            "value": "wide"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "additionalMargins",
+        "label": "Additional Margins",
+        "description": "Select the margins for each side so that authors have the ability to specify spacing",
+        "required": true,
+        "value": "none",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Narrow",
+            "value": "narrow"
+          },
+          {
+            "name": "Wide",
+            "value": "wide"
+          }
+        ]
+      },
+      {
+        "component": "checkbox-group",
+        "label": "Rounded Borders",
+        "name": "roundedBorders",
+        "valueType": "string",
+        "description": "Select check or unchecked for rounded borders",
+        "options": [
+          { "name": "Rounded Borders", "value": "true" }
+        ]
+      }
+    ]
   }
 ]
