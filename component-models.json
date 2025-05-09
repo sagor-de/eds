@@ -6146,5 +6146,89 @@
         ]
       }
     ]
+  },
+  {
+    "id": "test-component",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "icon",
+        "label": "Icon",
+        "description": "Upload the icon image",
+        "required": true
+      },
+      {
+        "component": "text",
+        "name": "iconAlt",
+        "label": "Icon Alt text",
+        "valueType": "string",
+        "description": "Pick alt text from AEM DAM with ability to override it",
+        "required": true
+      },
+      {
+        "component": "text",
+        "name": "title",
+        "required": true,
+        "label": "Title",
+        "valueType": "string",
+        "description": "Enter the Title"
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "required": true,
+        "label": "Description",
+        "valueType": "string",
+        "description": "Enter the description"
+      },
+      {
+        "component": "reference",
+        "name": "image",
+        "label": "Image",
+        "description": "Upload the image",
+        "required": true
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Image Alt text",
+        "description": "Pick alt text from AEM DAM with ability to override it",
+        "required": true
+      },
+      {
+        "component": "text",
+        "name": "textoverimage",
+        "required": true,
+        "label": "Text over Image",
+        "valueType": "string",
+        "description": "Enter the text to be displayed over image"
+      },
+      {
+        "component": "aem-content",
+        "name": "image",
+        "label": "Image Link",
+        "required" : true,
+        "description": "Enter the URL to navigate when the Image is clicked"
+      },
+      {
+        "component": "select",
+        "name": "targetPath",
+        "label": "Target Path",
+        "description": "Select the target path for the URL",
+        "value": "sameTab",
+        "options": [
+          {
+            "name": "Same Tab",
+            "value": "sameTab"
+          },
+          {
+            "name": "New Tab",
+            "value": "newTab"
+          }
+        ]
+      }
+    ]
   }
 ]
