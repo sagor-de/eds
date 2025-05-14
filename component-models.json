@@ -264,7 +264,26 @@
               "rootPath": "content/lilly-com-eds"
           },
           "condition": {
-          "!==": [{ "var": "linkHeadline" }, null]
+            "!": {
+            "or": [
+              {
+                "===": [
+                  {
+                    "var": "linkHeadline"
+                  },
+                  null
+                ]
+              },
+              {
+                "===": [
+                  {
+                    "var": "linkHeadline"
+                  },
+                  ""
+                ]
+              }
+            ]
+          }
         }
       },
       {
