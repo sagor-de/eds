@@ -262,7 +262,10 @@
         "description": "Enter the URL to navigate when Quick Link is clicked",
         "validation": {
               "rootPath": "content/lilly-com-eds"
-          }
+          },
+          "condition": {
+          "!==": [{ "var": "linkHeadline" }, ""]
+        }
       },
       {
         "component": "select",
