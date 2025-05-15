@@ -34,9 +34,24 @@
       "additional-links",
       "en-related-links",
       "aem-content-fragment",
-      "test-component"
+      "test-component",
+      "carousel-poc",
+      "primary-caraousel",
+      "secondary-carousel"
     ]
   },
+  {
+    "id": "carousel-poc",
+    "components": ["primary-carousel-model"]
+  },
+  {
+    "id": "primary-carousel",
+    "components": ["primary-carousel-model"]
+  },
+  {
+    "id": "secondary-carousel",
+    "components": ["secondary-carousel-model"]
+  }
   {
     "id": "table-multi",
     "components": ["row"]

@@ -6252,5 +6252,50 @@
         ]
       }
     ]
+  },
+  {
+    "id": "carousel-poc",
+    "fields": [
+      {
+        "component": "select",
+        "name": "filter",
+        "label": "Corousel Type",
+        "description": "Select Carousel Type",
+        "valueType": "string",
+        "value": "primary-carousel",
+        "options": [
+          {
+            "name": "Primary Carousel",
+            "value": "primary-carousel"
+          },
+          {
+            "name": "Secondary Carousel",
+            "value": "secondary-carousel"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "primary-carousel-model",
+    "fields": [
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "primaryCarousel",
+        "label": "Primary Carousel"
+      }
+    ]
+  },
+  {
+    "id": "secondary-carousel-model",
+    "fields": [
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "secondaryCarousel",
+        "label": "Secondary Carousel"
+      }
+    ]
   }
 ]
