@@ -5875,7 +5875,7 @@
     ]
   },
   {
-    "id": "table",
+    "id": "carousel-poc",
     "fields": [
       {
         "component": "select",
@@ -5883,7 +5883,7 @@
         "label": "Columns",
         "description": "Select Number Of Columns",
         "valueType": "string",
-        "value": "table",
+        "value": "carousel-poc",
         "options": [
           {
             "name": "2 Columns",
@@ -6250,69 +6250,6 @@
             "value": "newTab"
           }
         ]
-      }
-    ]
-  },
-  {
-    "id": "carousel-poc",
-    "fields": [
-      {
-        "component": "select",
-        "name": "filter",
-        "label": "Corousel Type",
-        "description": "Select Carousel Type",
-        "valueType": "string",
-        "value": "primary-carousel",
-        "options": [
-          {
-            "name": "Primary Carousel",
-            "value": "primary-carousel"
-          },
-          {
-            "name": "Secondary Carousel",
-            "value": "secondary-carousel"
-          }
-        ]
-      }
-    ],
-    "components": [
-      {
-        "id": "primary-carousel",
-        "fields": [
-          {
-            "component": "richtext",
-            "valueType": "string",
-            "name": "primaryCarousel",
-            "label": "Primary Carousel"
-          }
-        ],
-        "condition": {
-        "===": [
-          {
-            "var": "filter"
-          },
-          "primary-carousel"
-          ]
-        }
-      },
-      {
-        "id": "secondary-carousel",
-        "fields": [
-          {
-            "component": "richtext",
-            "valueType": "string",
-            "name": "secondaryCarousel",
-            "label": "Secondary Carousel"
-          }
-        ],
-        "condition": {
-        "===": [
-          {
-            "var": "blockType"
-          },
-          "secondary-carousel"
-          ]
-        }
       }
     ]
   }
