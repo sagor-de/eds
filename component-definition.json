@@ -686,14 +686,14 @@
         },
         {
           "title": "Primary Carousel",
-          "id": "primary-carousel-model",
+          "id": "primary-carousel",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block/item",
                 "template": {
                   "name": "Primary Carousel",
-                  "model": "primary-carousel-model"
+                  "model": "primary-carousel"
                 }
               }
             }
@@ -701,14 +701,14 @@
         },
         {
           "title": "Secondary Carousel",
-          "id": "secondary-carousel-model",
+          "id": "secondary-carousel",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block/item",
                 "template": {
                   "name": "Secondary Carousel",
-                  "model": "secondary-carousel-model"
+                  "model": "secondary-carousel"
                 }
               }
             }

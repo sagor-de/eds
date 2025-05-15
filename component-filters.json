@@ -42,15 +42,15 @@
   },
   {
     "id": "carousel-poc",
-    "components": ["primary-carousel-model"]
+    "components": ["primary-carousel"]
   },
   {
     "id": "primary-carousel",
-    "components": ["primary-carousel-model"]
+    "components": ["primary-carousel"]
   },
   {
     "id": "secondary-carousel",
-    "components": ["secondary-carousel-model"]
+    "components": ["secondary-carousel"]
   }
   {
     "id": "table-multi",

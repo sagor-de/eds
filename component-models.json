@@ -6274,27 +6274,45 @@
           }
         ]
       }
-    ]
-  },
-  {
-    "id": "primary-carousel-model",
-    "fields": [
+    ],
+    "components": [
       {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "primaryCarousel",
-        "label": "Primary Carousel"
-      }
-    ]
-  },
-  {
-    "id": "secondary-carousel-model",
-    "fields": [
+        "id": "primary-carousel",
+        "fields": [
+          {
+            "component": "richtext",
+            "valueType": "string",
+            "name": "primaryCarousel",
+            "label": "Primary Carousel"
+          }
+        ],
+        "condition": {
+        "===": [
+          {
+            "var": "filter"
+          },
+          "primary-carousel"
+          ]
+        }
+      },
       {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "secondaryCarousel",
-        "label": "Secondary Carousel"
+        "id": "secondary-carousel",
+        "fields": [
+          {
+            "component": "richtext",
+            "valueType": "string",
+            "name": "secondaryCarousel",
+            "label": "Secondary Carousel"
+          }
+        ],
+        "condition": {
+        "===": [
+          {
+            "var": "blockType"
+          },
+          "secondary-carousel"
+          ]
+        }
       }
     ]
   }
