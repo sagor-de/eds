@@ -34,8 +34,7 @@
       "additional-links",
       "en-related-links",
       "aem-content-fragment",
-      "test-component",
-      "carousel-poc"
+      "test-component"
     ]
   },
   {
@@ -43,7 +42,7 @@
     "components": ["row"]
   },
   {
-    "id": "carousel-poc",
+    "id": "table",
     "components": [
       "table-row"
     ]
