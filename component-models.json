@@ -5875,7 +5875,7 @@
     ]
   },
   {
-    "id": "table",
+    "id": "carousel-poc",
     "fields": [
       {
         "component": "select",
@@ -5883,7 +5883,7 @@
         "label": "Columns",
         "description": "Select Number Of Columns",
         "valueType": "string",
-        "value": "table",
+        "value": "carousel-poc",
         "options": [
           {
             "name": "2 Columns",

@@ -30,7 +30,7 @@
       "quote-block",
       "text-block",
       "table-multi",
-      "table",
+      "carousel-poc",
       "additional-links",
       "en-related-links",
       "aem-content-fragment",
@@ -42,7 +42,7 @@
     "components": ["row"]
   },
   {
-    "id": "table",
+    "id": "carousel-poc",
     "components": [
       "table-row"
     ]
