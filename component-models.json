@@ -250,6 +250,7 @@
         "name": "numberWithZeros",
         "label": "Enter Number",
         "valueType": "string",
+        "inputType": "text",
         "required": true,
         "validation": {
           "pattern": "^\\d+$",
