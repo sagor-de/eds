@@ -253,7 +253,7 @@
         "inputType": "number",
         "required": true,
         "validation": {
-          "regex": "^\\d+$",
+          "pattern": "^\\d+$",
           "patternMessage": "Only numbers are allowed"
         }
       },
