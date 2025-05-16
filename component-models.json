@@ -247,6 +247,17 @@
     "fields": [
       {
         "component": "text",
+        "name": "numberWithZeros",
+        "label": "Enter Number",
+        "valueType": "string",
+        "required": true,
+        "validation": {
+          "pattern": "^0*[0-9]+$",
+          "patternMessage": "Only numbers are allowed"
+        }
+      },
+      {
+        "component": "text",
         "valueType": "string",
         "name": "linkHeadline",
         "label": "Link Headline",
