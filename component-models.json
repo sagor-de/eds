@@ -246,11 +246,11 @@
     "id": "additional-link",
     "fields": [
       {
-        "component": "text",
+        "component": "number",
         "name": "numberWithZeros",
         "label": "Enter Number",
-        "valueType": "string",
-        "inputType": "text",
+        "valueType": "number",
+        "inputType": "number",
         "required": true,
         "validation": {
           "regex": "^\\d+$",
