@@ -5895,19 +5895,19 @@
         "label": "Columns",
         "description": "Select Number Of Columns",
         "valueType": "string",
-        "value": "table-2-columns",
+        "value": "carousel-variation-1",
         "options": [
           {
             "name": "2 Columns",
-            "value": "table-2-columns"
+            "value": "carousel-variation-1"
           },
           {
             "name": "3 Columns",
-            "value": "table-3-columns"
+            "value": "carousel-variation-2"
           },
           {
             "name": "4 Columns",
-            "value": "table-4-columns"
+            "value": "carousel-variation-3"
           },
           {
             "name": "5 Columns",

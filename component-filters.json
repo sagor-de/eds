@@ -44,25 +44,25 @@
   {
     "id": "carousel-poc",
     "components": [
-      "table-col-2"
+      "variation-1"
     ]
   },
   {
-    "id": "table-2-columns",
+    "id": "carousel-variation-1",
     "components": [
-      "table-col-2"
+      "variation-1"
     ]
   },
   {
-    "id": "table-3-columns",
+    "id": "carousel-variation-2",
     "components": [
-      "table-col-3"
+      "variation-2"
     ]
   },
   {
-    "id": "table-4-columns",
+    "id": "carousel-variation-3",
     "components": [
-      "table-col-4"
+      "variation-3"
     ]
   },
   {
