@@ -5898,24 +5898,20 @@
         "value": "carousel-variation-1",
         "options": [
           {
-            "name": "2 Columns",
+            "name": "Variation 1",
             "value": "carousel-variation-1"
           },
           {
-            "name": "3 Columns",
+            "name": "Variation 2",
             "value": "carousel-variation-2"
           },
           {
-            "name": "4 Columns",
+            "name": "Variation 3",
             "value": "carousel-variation-3"
           },
           {
-            "name": "5 Columns",
-            "value": "table-5-columns"
-          },
-          {
-            "name": "6 Columns",
-            "value": "table-6-columns"
+            "name": "Variation 4",
+            "value": "carousel-variation-4"
           }
         ]
       }
@@ -5933,106 +5929,46 @@
     ]
   },
   {
-    "id": "table-col-2",
+    "id": "variation-1",
     "fields": [
       {
         "component": "richtext",
         "valueType": "string",
-        "name": "column1text",
-        "label": "Column1 Description"
-      },
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "column2text",
-        "label": "Column2 Description"
+        "name": "var1text",
+        "label": "Variation 1 Description"
       }
     ]
   },
   {
-    "id": "table-col-3",
+    "id": "variation-2",
     "fields": [
       {
         "component": "richtext",
         "valueType": "string",
-        "name": "column1text",
-        "label": "Column1 Description"
-      },
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "column2text",
-        "label": "Column2 Description"
-      },
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "column3text",
-        "label": "Column3 Description"
+        "name": "var2text",
+        "label": "Variation 2 Description"
       }
     ]
   },
   {
-    "id": "table-col-4",
+    "id": "variation-3",
     "fields": [
       {
         "component": "richtext",
         "valueType": "string",
-        "name": "column1text",
-        "label": "Column1 Description"
-      },
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "column2text",
-        "label": "Column2 Description"
-      },
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "column3text",
-        "label": "Column3 Description"
-      },
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "column4text",
-        "label": "Column4 Description"
+        "name": "var31text",
+        "label": "Variation 3 Description"
       }
     ]
   },
   {
-    "id": "table-col-5",
+    "id": "variation-4",
     "fields": [
       {
         "component": "richtext",
         "valueType": "string",
-        "name": "column1text",
-        "label": "Column1 Description"
-      },
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "column2text",
-        "label": "Column2 Description"
-      },
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "column3text",
-        "label": "Column3 Description"
-      },
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "column4text",
-        "label": "Column4 Description"
-      },
-      {
-        "component": "richtext",
-        "valueType": "string",
-        "name": "column5text",
-        "label": "Column5 Description"
+        "name": "var4text",
+        "label": "Variation 4 Description"
       }
     ]
   },
