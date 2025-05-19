@@ -44,7 +44,7 @@
   {
     "id": "carousel-poc",
     "components": [
-      "table-row"
+      "table-col-2"
     ]
   },
   {

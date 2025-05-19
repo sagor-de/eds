@@ -5895,7 +5895,7 @@
         "label": "Columns",
         "description": "Select Number Of Columns",
         "valueType": "string",
-        "value": "carousel-poc",
+        "value": "table-2-columns",
         "options": [
           {
             "name": "2 Columns",

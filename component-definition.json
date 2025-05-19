@@ -486,7 +486,7 @@
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block/item",
                 "template": {
-                  "name": "Variation",
+                  "name": "Variation 1",
                   "model": "table-col-2",
                   "column1text": "Column1 Description",
                   "column2text": "Column2 Description"
