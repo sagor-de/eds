@@ -5892,8 +5892,8 @@
       {
         "component": "select",
         "name": "filter",
-        "label": "Columns",
-        "description": "Select Number Of Columns",
+        "label": "Select The Variation",
+        "description": "Select The Variation",
         "valueType": "string",
         "value": "carousel-variation-1",
         "options": [
