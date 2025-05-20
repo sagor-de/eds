@@ -244,19 +244,7 @@
   },
   {
     "id": "additional-link",
-    "fields": [
-      {
-        "component": "number",
-        "name": "numberWithZeros",
-        "label": "Enter Number",
-        "valueType": "number",
-        "inputType": "number",
-        "required": true,
-        "validation": {
-          "pattern": "^\\d+$",
-          "patternMessage": "Only numbers are allowed"
-        }
-      },
+    "fields": [    
       {
         "component": "text",
         "valueType": "string",
