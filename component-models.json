@@ -6188,5 +6188,135 @@
         ]
       }
     ]
+  },
+  {
+    "id": "executive-tile",
+    "fields": [
+      {
+        "component": "reference",
+        "name": "image",
+        "label": "Image",
+        "required": true,
+        "description": "Upload Image"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Image Alt text",
+        "description": "Pick alt text from AEM DAM with ability to override it",
+        "required": true,
+        "value": "Alt text from AEM DAM"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "label": "Name",
+        "name": "executiveName",
+        "description": "Enter the Executive’s name",
+        "required": true
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "label": "Designation",
+        "name": "executiveDesignation",
+        "description": "Enter the Executive’s Designation",
+        "required": true
+      },
+      {
+        "component": "checkbox-group",
+        "label": "Instagram Profile",
+        "name": "instagramProfile",
+        "valueType": "boolean",
+        "description": "Select if the Executive’s Instagram profile is available",
+        "options": [
+        { "name": "Option1", "value": "option1" },
+        { "name": "Option 2", "value": "option2" }
+      ]
+      },
+      {
+        "component": "aem-content",
+        "name": "instagramURL",
+        "label": "Instagram URL",
+        "description": "Enter the Instagram profile URL",
+        "required": true,
+        "valueType": "string",
+        "condition": { "===": [ { "var": "instagramProfile"}, "option1" ] }
+      },
+      {
+        "component": "boolean",
+        "label": "X Profile",
+        "name": "xProfile",
+        "valueType": "boolean",
+        "description": "Select if the Executive’s X profile is available"
+      },
+      {
+        "component": "aem-content",
+        "name": "xURL",
+        "description": "Enter the X profile URL",
+        "label": "X URL",
+        "valueType": "string",
+        "required": true,
+        "condition": { "===": [ { "var": "xProfile"}, true ] },
+        "validation": {
+          "rootPath": "/content"
+        }
+      },
+      {
+        "component": "boolean",
+        "label": "LinkedIn Profile",
+        "name": "linkedInProfile",
+        "valueType": "boolean",
+        "description": "Select if the Executive’s LinkedIn profile is available"
+      },
+      {
+        "component": "aem-content",
+        "name": "linkedInURL",
+        "label": "LinkedIn URL",
+        "description": "Enter the LinkedIn profile URL",
+        "required": true,
+        "valueType": "string",
+        "condition": { "===": [ { "var": "linkedInProfile"}, true ] }
+      },
+      {
+        "component": "text",
+        "name": "ctaLabel",
+        "label": "CTA Label",
+        "valueType": "string",
+        "description": "Enter label to display on the CTA"
+      },
+      {
+        "component": "aem-content",
+        "name": "executiveBioFile ",
+        "label": "Executive Bio File ",
+        "description": "Upload link to the bio file",
+        "condition": {
+          "!": {
+            "or": [
+              {
+                "===": [
+                  {
+                    "var": "ctaLabel"
+                  },
+                  null
+                ]
+              },
+              {
+                "===": [
+                  {
+                    "var": "ctaLabel"
+                  },
+                  ""
+                ]
+              }
+            ]
+          }
+        },
+        "validation": {
+          "rootPath": "/content"
+        }
+      }
+    ]
   }
 ]
