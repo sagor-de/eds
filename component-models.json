@@ -6228,7 +6228,7 @@
         "component": "checkbox-group",
         "label": "Instagram Profile",
         "name": "instagramProfile",
-        "valueType": "boolean",
+        "valueType": "string",
         "description": "Select if the Executive’s Instagram profile is available",
         "options": [
         { "name": "Option1", "value": "option1" },
@@ -6242,7 +6242,12 @@
         "description": "Enter the Instagram profile URL",
         "required": true,
         "valueType": "string",
-        "condition": { "===": [ { "var": "instagramProfile"}, "option1" ] }
+        "condition": {
+          "in": [
+            "option1",
+            { "var": "instagramProfile" }
+          ]
+        }
       },
       {
         "component": "boolean",
