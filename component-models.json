@@ -80,6 +80,28 @@
         "description": "Enter the CTA link",
         "validation": {
           "rootPath": "content/lilly-com-eds"
+        },
+        "condition": {
+            "!": {
+            "or": [
+              {
+                "===": [
+                  {
+                    "var": "ctaLabel"
+                  },
+                  null
+                ]
+              },
+              {
+                "===": [
+                  {
+                    "var": "ctaLabel"
+                  },
+                  ""
+                ]
+              }
+            ]
+          }
         }
       },
       {
