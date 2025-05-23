@@ -40,9 +40,7 @@
   },
   {
     "id": "executive-grids",
-    "components": [
-      "executive-grid"
-    ]
+    "components": ["executive-grid"]
   },
   {
     "id": "table-multi",
