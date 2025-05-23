@@ -667,7 +667,7 @@
                   "model": "executive-grids",
                   "filter": "executive-grids",
                   "item0": {
-                    "resourceType": "core/franklin/components/block/v1/block/item",
+                    "sling:resourceType": "core/franklin/components/block/v1/block/item",
                       "name": "Executive Grid",
                       "model": "executive-grid"
                     }
