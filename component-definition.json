@@ -665,7 +665,14 @@
                 "template": {
                   "name": "Executive Grids",
                   "model": "executive-grids",
-                  "filter": "executive-grids"
+                  "filter": "executive-grids",
+                  "item0": {
+                    "resourceType": "core/franklin/components/block/v1/block/item",
+                    "template": {
+                      "name": "Executive Grid",
+                      "model": "executive-grid"
+                    }
+                  }
                 }
               }
             }
