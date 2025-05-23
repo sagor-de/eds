@@ -62,21 +62,22 @@
         "label": "Designation",
         "valueType": "string",
         "description": "Enter the Executive’s Designation",
-        "required": false
+        "required": true
       },
       {
         "component": "text",
         "name": "ctaLabel",
         "label": "CTA Label",
         "valueType": "string",
-        "description": "Enter the CTA Label"
+        "description": "Enter the CTA Label",
+        "required": true
       },
       {
         "component": "aem-content",
         "name": "ctaLink",
-        "label": "CTA Link",
+        "label": "Executive bio Link",
         "valueType": "string",
-        "description": "EEnter the CTA link",
+        "description": "Enter the CTA link",
         "validation": {
           "rootPath": "content/lilly-com-eds"
         }
