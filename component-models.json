@@ -1,4 +1,69 @@
 [
+    {
+    "id": "media-card",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "mediaCardTitle",
+        "label": "Title",
+        "description": "Enter the text",
+        "multi": false
+      }
+    ]
+  },
+  {
+    "id": "media-card-link",
+    "fields": [
+      {
+        "component": "text",
+        "name": "ctaLabel",
+        "label": "CTA Label",
+        "valueType": "string",
+        "description": "Enter the CTA Label",
+        "required": true
+      },
+      {
+        "component": "aem-content",
+        "name": "ctaLink",
+        "label": "Asset Path",
+        "valueType": "string",
+        "description": "Enter the CTA link",
+        "validation": {
+          "rootPath": "content/lilly-com-eds"
+        },
+        "condition": {
+            "!": {
+            "or": [
+              {
+                "===": [
+                  {
+                    "var": "ctaLabel"
+                  },
+                  null
+                ]
+              },
+              {
+                "===": [
+                  {
+                    "var": "ctaLabel"
+                  },
+                  ""
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "component": "text",
+        "name": "news-tile-aria-label",
+        "label": "ARIA Label",
+        "valueType": "string",
+        "description": "Enter ARIA label to comply ADA"
+      }
+    ]
+  },
   {
     "id": "executive-grids",
     "fields": [

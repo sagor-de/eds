@@ -35,8 +35,13 @@
       "en-related-links",
       "aem-content-fragment",
       "executive-tile",
-      "executive-grids"
+      "executive-grids",
+      "media-card"
     ]
+  },
+    {
+    "id": "media-card",
+    "components": ["media-card-link"]
   },
   {
     "id": "executive-grids",
