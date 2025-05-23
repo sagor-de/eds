@@ -1,5 +1,89 @@
 [
   {
+    "id": "executive-grids",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "executiveGrids",
+        "label": "Section Title",
+        "description": "Enter the title for the entire executive grids",
+        "multi": false
+      }
+    ]
+  },
+  {
+    "id": "executive-grid",
+    "fields": [
+      {
+        "component": "select",
+        "name": "image-placement",
+        "label": "Image Placement",
+        "description": "Select the appropriate image placement option",
+        "required": true,
+        "value": "left",
+        "options": [
+          {
+            "name": "Top",
+            "value": "top"
+          },
+          {
+            "name": "Left",
+            "value": "left"
+          }
+        ]
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "required": true,
+        "description": "Upload the image"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Image Alt Text ",
+        "description": "Pick alt text from AEM DAM with ability to override it"
+      },
+      {
+        "component": "text",
+        "name": "name",
+        "label": "Name",
+        "valueType": "string",
+        "description": "Enter the Executive’s name",
+        "required": true
+      },
+      {
+        "component": "text",
+        "name": "designation",
+        "label": "Designation",
+        "valueType": "string",
+        "description": "Enter the Executive’s Designation",
+        "required": false
+      },
+      {
+        "component": "text",
+        "name": "ctaLabel",
+        "label": "CTA Label",
+        "valueType": "string",
+        "description": "Enter the CTA Label"
+      },
+      {
+        "component": "aem-content",
+        "name": "ctaLink",
+        "label": "CTA Link",
+        "valueType": "string",
+        "description": "EEnter the CTA link",
+        "validation": {
+          "rootPath": "content/lilly-com-eds"
+        }
+      }
+    ]
+  },
+  {
     "id": "two-clm-with-img",
     "fields": [
       {
