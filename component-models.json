@@ -50,7 +50,7 @@
       },
       {
         "component": "text",
-        "name": "name",
+        "name": "executiveName",
         "label": "Name",
         "valueType": "string",
         "description": "Enter the Executive’s name",
