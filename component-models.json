@@ -17,7 +17,7 @@
     "fields": [
       {
         "component": "select",
-        "name": "image-placement",
+        "name": "imagePlacement",
         "label": "Image Placement",
         "description": "Select the appropriate image placement option",
         "required": true,
