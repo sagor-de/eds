@@ -81,6 +81,13 @@
         "validation": {
           "rootPath": "content/lilly-com-eds"
         }
+      },
+      {
+        "component": "text",
+        "name": "news-tile-aria-label",
+        "label": "ARIA Label",
+        "valueType": "string",
+        "description": "Enter ARIA label to comply ADA"
       }
     ]
   },
