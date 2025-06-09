@@ -1,5 +1,5 @@
 [
-    {
+  {
     "id": "media-card",
     "fields": [
       {
@@ -6502,5 +6502,125 @@
         }
       }
     ]
-  }
+  },
+  {
+      "id": "bulleted-icon-list",
+      "fields": [
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "icon",
+          "label": "Icon",
+          "required": true,
+          "description": "Select or upload an icon for the tile."
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "iconAlt",
+          "label": "Icon Alt Text ",
+          "description": "Pick alt text from AEM DAM with ability to override it"
+        },
+        {
+          "component": "text",
+          "name": "text",
+          "label": "Title",
+          "valueType": "string",
+          "description": "Enter the title",
+          "required": true
+        },
+        {
+          "component": "richtext",
+          "name": "description",
+          "label": "Description",
+          "valueType": "string",
+          "description": "Enter the description",
+          "required": false
+        },
+        {
+          "component": "text",
+          "name": "ctaLabel",
+          "label": "CTA Label",
+          "valueType": "string",
+          "description": "Enter label to display on the CTA for each card"
+        },
+        {
+          "component": "select",
+          "name": "ctaType",
+          "label": "CTA Type",
+          "description": "Select the CTA Type",
+          "options": [
+            {
+              "name": "Link",
+              "value": "link"
+            },
+            {
+              "name": "Asset (PDF/Image)",
+              "value": "asset"
+            }
+          ],
+          "condition": {
+            "!!": { "var": "ctaLabel" }
+          }
+        },
+        {
+          "component": "aem-content",
+          "name": "ctaLink",
+          "label": "CTA Link",
+          "valueType": "string",
+          "description": "Enter the URL to navigate when CTA is clicked for each card",
+          "validation": {
+            "rootPath": "/content"
+          },
+          "condition": { "===": [{ "var": "ctaType" }, "link"] }
+        },
+        {
+          "component": "reference",
+          "name": "ctaAsset",
+          "label": "Asset (PDF/Image)",
+          "description": "Upload the Asset (PDF/Image)",
+          "valueType": "string",
+          "condition": { "===": [{ "var": "ctaType" }, "asset"] }
+        },
+        {
+          "component": "text",
+          "name": "card-tile-aria-label",
+          "label": "ARIA Label",
+          "valueType": "string",
+          "description": "Enter ARIA label to comply ADA"
+        },
+        {
+          "component": "select",
+          "name": "targetPath",
+          "label": "Target Path",
+          "description": "Select the target path for the authored CTA URL",
+          "value": "sameTab",
+          "options": [
+            {
+              "name": "Same Tab",
+              "value": "sameTab"
+            },
+            {
+              "name": "New Tab",
+              "value": "newTab"
+            }
+          ],
+          "condition": { "===": [{ "var": "ctaType" }, "link"] }
+        },
+        {
+          "component": "checkbox-group",
+          "name": "exitInterstitial",
+          "label": "Exit Interstitial",
+          "description": "Select this checkbox to enable the modal experience",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Exit Interstitial",
+              "value": "true"
+            }
+          ],
+          "condition": { "===": [ { "var": "ctaType" }, "link" ] }
+        }
+      ]
+    }
 ]

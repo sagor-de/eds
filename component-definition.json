@@ -726,6 +726,21 @@
               }
             }
           }
+        },
+        {
+          "title": "Bulleted Icon List",
+          "id": "bulleted-icon-list",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Bulleted Icon List",
+                  "model": "bulleted-icon-list"
+                }
+              }
+            }
+          }
         }
       ]
     }
