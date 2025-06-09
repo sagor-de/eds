@@ -6547,7 +6547,7 @@
       {
         "component": "select",
         "name": "ctaType",
-        "label": "CTA Type",
+        "label": "CTA Selection",
         "description": "Select the CTA Type",
         "options": [
           {
