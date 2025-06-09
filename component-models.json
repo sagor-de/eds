@@ -6572,7 +6572,12 @@
         "validation": {
           "rootPath": "/content"
         },
-        "condition": { "===": [{ "var": "ctaType" }, "link"] }
+        "condition": {
+            "and": [
+              { "!!": { "var": "ctaLabel" } },
+              { "===": [{ "var": "ctaType" }, "link"] }
+            ]
+        }
       },
       {
         "component": "reference",
@@ -6580,7 +6585,12 @@
         "label": "Asset (PDF/Image)",
         "description": "Upload the Asset (PDF/Image)",
         "valueType": "string",
-        "condition": { "===": [{ "var": "ctaType" }, "asset"] }
+        "condition": {
+            "and": [
+              { "!!": { "var": "ctaLabel" } },
+              { "===": [{ "var": "ctaType" }, "asset"] }
+            ]
+        }
       },
       {
         "component": "text",
@@ -6605,7 +6615,12 @@
             "value": "newTab"
           }
         ],
-        "condition": { "===": [{ "var": "ctaType" }, "link"] }
+        "condition": {
+            "and": [
+              { "!!": { "var": "ctaLabel" } },
+              { "===": [{ "var": "ctaType" }, "link"] }
+            ]
+        }
       },
       {
         "component": "checkbox-group",
@@ -6619,7 +6634,12 @@
             "value": "true"
           }
         ],
-        "condition": { "===": [ { "var": "ctaType" }, "link" ] }
+        "condition": {
+            "and": [
+              { "!!": { "var": "ctaLabel" } },
+              { "===": [{ "var": "ctaType" }, "link"] }
+            ]
+        }
       }
     ]
   }
