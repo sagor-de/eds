@@ -6369,7 +6369,7 @@
     ]
   },
   {
-    "id": "bulleted-icon-list",
+    "id": "executive-tile",
     "fields": [
       {
         "component": "reference",
@@ -6504,7 +6504,7 @@
     ]
   },
   {
-    "id": "bulleted-icon-list-bkp",
+    "id": "bulleted-icon-list",
     "fields": [
       {
         "component": "reference",
